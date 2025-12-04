@@ -5,11 +5,16 @@ import slide_2 from "../assets/images/home/slider-2.jpg"
 import slide_3 from "../assets/images/home/slider-3.jpg"
 import slide_4 from "../assets/images/home/slider-4.jpg"
 import { CounterSection } from '../components/CounterSection'
+import useSlideUp from "../hooks/useSlideUp"
+import useIsMobile from "../hooks/useIsMobile"
 import "./home.css"
 
 
 
 export function Home() {
+
+    const isMobile = useIsMobile();
+    useSlideUp();
 
     const images = [slide_1, slide_2, slide_3, slide_4];
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -20,6 +25,12 @@ export function Home() {
         }, 4000)
         return () => clearInterval(interval);
     }, []);
+
+
+   
+
+
+
     return (
         <>
             <NavBar />
@@ -77,36 +88,11 @@ export function Home() {
 
                 <section className="section-3">
                     <CounterSection />
-                    {/* <div className="exp-div">
-                        <div>
-                            <div>
-                                <h6 className="count" data-target="2">0</h6>
-                                <span>Months</span>
-                            </div>
-                            <p>Trusted Results</p>
-                        </div>
-                        <div>
-                            <h6 className="count" data-target="5">0</h6>
-                            <p>Creative & Tech Talents</p>
-                        </div>
-                        <div>
-                            <div>
-                                <h6 className="count" data-target="1">0</h6>
-                                <span>Projects</span>
-                            </div>
-                            <p>Completed With Precision</p>
-
-                        </div>
-                        <div>
-                            <h6 className="count" data-target="1000">0</h6>
-                            <p>Hours of Expertise</p>
-                        </div>
-                    </div> */}
                 </section>
 
-                {/* 
+
                 <section className="section-4 slide-up">
-                    <h6>What <span>make us </span>Different!</h6>
+                    <h6>What <span>make us </span> <br />Different!</h6>
                     <div className="uni-div-main">
 
                         <div className="uni-content-wrapper slide-up">
@@ -114,12 +100,14 @@ export function Home() {
                                 src="https://cdn.lordicon.com/eaegfqtv.json"
                                 trigger="hover"
                                 colors="primary:#121331,secondary:#808080"
-                                style="width:80px;height:80px">
+                                style={{ 
+                                    width: isMobile ? "265px" : "80px", 
+                                    height: isMobile ? "90px" : "80px" }}>
                             </lord-icon>
                             <div className="uni-content-div">
                                 <h3>Cost Effective</h3>
-                                <p>We deliver affordable, high-quality digital solutions.<br />
-                                    Smart solutions, real results — all within your budget.
+                                <p>We deliver affordable, high quality digital solutions.{ isMobile ? '' : <br />}
+                                    Smart solutions, real results all within your budget.
                                 </p>
                             </div>
                         </div>
@@ -128,11 +116,13 @@ export function Home() {
                                 src="https://cdn.lordicon.com/fjvfsqea.json"
                                 trigger="hover"
                                 colors="primary:#121331,secondary:#808080"
-                                style="width:80px;height:80px">
+                                style={{ 
+                                    width: isMobile ? "215px" : "80px", 
+                                    height: isMobile ? "100px" : "80px" }}>
                             </lord-icon>
                             <div className="uni-content-div">
                                 <h3>Transparency</h3>
-                                <p>What you see is what you get. <br />
+                                <p>What you see is what you get. { isMobile ? "" :<br />}
                                     We believe trust starts with complete transparency.
                                 </p>
                             </div>
@@ -142,12 +132,14 @@ export function Home() {
                                 src="https://cdn.lordicon.com/jdgfsfzr.json"
                                 trigger="hover"
                                 colors="primary:#121331,secondary:#808080"
-                                style="width:80px;height:80px">
+                                style={{ 
+                                    width: isMobile ? "220px" : "80px", 
+                                    height: isMobile ? "90px" : "80px" }}>
                             </lord-icon>
                             <div className="uni-content-div">
                                 <h3>Powered by Youth</h3>
-                                <p>Young minds, sharper ideas. <br />
-                                    We blend curiosity with skill to build impactful solutions.
+                                <p>Young minds, sharper ideas. {isMobile ? '' :  <br /> }
+                                     We blend curiosity with skill to build impactful solutions.
                                 </p>
                             </div>
                         </div>
@@ -156,11 +148,13 @@ export function Home() {
                                 src="https://cdn.lordicon.com/fwkrbvja.json"
                                 trigger="hover"
                                 colors="primary:#121331,secondary:#808080"
-                                style="width:80px;height:80px">
+                                style={{ 
+                                    width: isMobile ? "253px" : "80px", 
+                                    height: isMobile ? "90px" : "80px" }}>
                             </lord-icon>
                             <div className="uni-content-div">
                                 <h3>Innovation & Creative</h3>
-                                <p>We don’t follow trends — we set them. <br />
+                                <p>We don’t follow trends we set them. {isMobile ? '' : <br /> }
                                     Our ideas are original, bold, and built to make you stand out.
                                 </p>
                             </div>
@@ -169,6 +163,7 @@ export function Home() {
                     </div>
                 </section>
 
+                {/* 
                 <section className="section-5 slide-up">
                     <h6 className="title">Core <span>Services</span></h6>
                     <div className="solutions-grid slide-up">

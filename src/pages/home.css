@@ -1366,7 +1366,7 @@ button:focus {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         gap: 1.7rem;
-        padding: 1.5rem 1rem 1rem 1rem;
+        padding: 1.5rem 1rem 1.5rem 1rem;
         margin-left: 1rem;
     }
 
@@ -1419,19 +1419,35 @@ button:focus {
     }
 
     .section-4 h6 {
-        font-size: 3rem;
+        font-size: 2.6rem;
+        padding-top: 0.6rem;
+        margin-left: 0;
     }
 
     .uni-div-main {
         display: flex;
         flex-direction: column;
-        margin-left: 2rem;
+        margin-left: 0rem;
+        gap: 4rem;
+    }
 
+    .uni-content-div h3 {
+        font-size: 1.5rem;
+    }
+
+    .uni-content-div p{
+        font-size: 1.25rem;
+    }
+
+    .uni-content-wrapper{
+        justify-content: flex-end;
     }
 
     .br-exp {
         display: none;
     }
+
+    /* section-5 */
 
     .section-5 {
         margin: 0 3rem;
