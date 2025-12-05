@@ -380,7 +380,7 @@ button:focus {
 
 .solutions-grid {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(25rem, 1fr));
     gap: 3rem;
     margin: 0 1.5rem;
 }
@@ -403,9 +403,15 @@ button:focus {
 }
 
 .icon {
-    font-size: 3.2rem;
-    color: #0000cc;
+    width: 3rem;
+    height: 3rem;
     margin-bottom: 1rem;
+}
+
+.icon>img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 .solution-card h2 {
@@ -495,12 +501,9 @@ button:focus {
 
 .link-div a span {
     font-size: 2rem;
+    font-weight: bold;
     display: inline-block;
     transition: transform 0.3s ease;
-}
-
-.link-div a:hover span {
-    transform: translateX(5px);
 }
 
 
@@ -545,7 +548,7 @@ button:focus {
 
 .top-div h2 {
     padding: 2rem 0 2rem 3rem;
-    color: #f5f5f5;
+    color: #ffffff;
     font-size: 6rem;
     letter-spacing: 0.5rem;
 }
@@ -567,12 +570,7 @@ button:focus {
 
 }
 
-.bottom-div>h6 {
-    font-size: 2rem;
-    font-weight: lighter;
-    margin: 4rem 0;
-    padding-left: 2rem;
-}
+
 
 .bottom-div>h6 a {
     text-decoration: none;
@@ -604,7 +602,7 @@ button:focus {
     }
 
     to {
-        width: 37ch;
+        width: 36ch;
     }
 }
 
@@ -1374,42 +1372,42 @@ button:focus {
         font-size: 2.5rem;
     }
 
-    .exp-div > div:nth-child(1) {
+    .exp-div>div:nth-child(1) {
         order: 2;
     }
 
-    
 
-    .exp-div > div:nth-child(2) {
+
+    .exp-div>div:nth-child(2) {
         order: 3;
     }
 
-    .exp-div > div:nth-child(3) {
+    .exp-div>div:nth-child(3) {
         order: 1;
     }
 
 
-    .exp-div > div:nth-child(4) {
+    .exp-div>div:nth-child(4) {
         order: 4;
     }
 
-    .exp-div > div:nth-child(1)  div,
-     .exp-div > div:nth-child(3) div{
+    .exp-div>div:nth-child(1) div,
+    .exp-div>div:nth-child(3) div {
         display: flex;
         align-items: center;
 
     }
 
-    .exp-div > div:nth-child(1)  div span,
-    .exp-div > div:nth-child(3) div span{
-        font-size: 1.2rem;
-        
-   }
+    .exp-div>div:nth-child(1) div span,
+    .exp-div>div:nth-child(3) div span {
+        font-size: 1.5rem;
+
+    }
 
     .exp-div p {
         font-size: 1.3rem;
     }
-    
+
 
     /* Section-4 */
 
@@ -1435,11 +1433,11 @@ button:focus {
         font-size: 1.5rem;
     }
 
-    .uni-content-div p{
+    .uni-content-div p {
         font-size: 1.25rem;
     }
 
-    .uni-content-wrapper{
+    .uni-content-wrapper {
         justify-content: flex-end;
     }
 
@@ -1452,38 +1450,84 @@ button:focus {
     .section-5 {
         margin: 0 3rem;
         border-top: 0.1rem solid #dee0ff;
-        padding: 2rem 1rem 2rem 1rem;
+        padding: 0;
+    }
+
+    .section-5 .title {
+        margin-top: 1.3rem;
+        margin-bottom: 1.5rem;
+        font-size: 2.6rem;
+    }
+
+    .solution-card p {
+        font-size: 1.3rem;
+    }
+
+    .solution-card h2 {
+        font-size: 1.5rem;
     }
 
     .solutions-grid {
         margin: 0;
     }
 
+    .button-wrapper {
+        margin-top: 2rem;
+    }
+
+
+    /* Section-6 */
 
     .section-6 {
-        margin: 2rem 0rem;
-        border-radius: 1rem;
+        margin: 2rem 3rem 1rem 3rem;
+        border-radius: 0.8rem;
+        padding-bottom: 2rem;
     }
 
     .section-6 h2 {
         margin-left: 1rem;
-        margin-top: 3rem;
+        margin-top: 2.5rem;
+        padding: 0.5rem 0.7rem;
+        font-size: 1.3rem;
     }
 
     .why-div p {
-        margin-left: 1.3rem;
-        text-indent: 3.5rem;
+        margin-left: 1rem;
+        text-indent: 2rem;
+        padding: 1rem 0 1rem;
+        font-size: 1.2rem;
     }
+
+
+    .expandable-text {
+        overflow: hidden;
+        transition: max-height 0.5s ease;
+    }
+
+
+    .arrow {
+        display: inline-block;
+        transition: transform 0.3s ease;
+    }
+
+    .arrow.rotate {
+        transform: rotate(-90deg);
+    }
+
 
     .link-div {
         margin-left: 1.3rem;
+    }
+
+    .link-div a{
+        font-size: 1.2rem;
     }
 
 
     /* Section-7 */
 
     .section-7 {
-        margin: 0 0;
+        margin: 2rem 0;
     }
 
     .top-div {
@@ -1492,29 +1536,33 @@ button:focus {
 
 
     .top-div h2 {
-        font-size: 3rem;
+        font-size: 2rem;
         letter-spacing: 0.2rem;
     }
 
-
-    .bottom-div h6 {
-        font-size: 1.6rem;
-        margin: 2rem 0;
-        font-weight: bold;
-
+    .typing-effect{
+        font-size: 1.2rem;
+        font-weight: 600;
+        margin: 0.5rem 2rem;
+        
     }
-
+        
     .bottom-div>p {
         margin: 0;
+        font-size: 1.3rem;
     }
 
     .bottom-div h5 {
-        font-size: 1.6rem;
-        padding: 2rem 2rem 0rem 2rem;
+        font-size: 1.5rem;
+        padding: 1.5rem 2rem 0rem 2rem;
     }
 
     .btm-content-wrap {
         width: auto;
+    }
+
+    .btm-content-div{
+        margin-right: 0;
     }
 
     .btm-content-div li {
@@ -1529,6 +1577,31 @@ button:focus {
     .btm-content-div p {
         font-size: 1.2rem;
     }
+
+    .btm-content-wrap{
+        gap: 1.2rem;
+        margin-left: 3rem;
+    }
+
+    .btm-content-div{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .btm-content-div:nth-child(1) li:nth-child(2){
+        order: 3;
+    }
+
+
+    .btm-content-div:nth-child(2) li:nth-child(2){
+        order: 1;
+    }
+
+    .btm-content-div:nth-child(2) li:nth-child(1){
+        order: 3;
+    }
+
+
 
 
     .contact-content-wrap {

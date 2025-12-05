@@ -4,9 +4,16 @@ import slide_1 from "../assets/images/home/slider-1.jpg"
 import slide_2 from "../assets/images/home/slider-2.jpg"
 import slide_3 from "../assets/images/home/slider-3.jpg"
 import slide_4 from "../assets/images/home/slider-4.jpg"
+import webDevelopment from "../assets/images/home/computer.png"
+import graphicDesign from "../assets/images/home/graphic-design.png"
+import videoEditing from "../assets/images/home/video-editing.png"
+import checkCircle from "../assets/images/home/check-circle.png"
+import rightArrow from "../assets/images/home/right-arrow.png"
 import { CounterSection } from '../components/CounterSection'
+import { WhyExpandableText } from "../components/WhyExpandableText"
 import useSlideUp from "../hooks/useSlideUp"
 import useIsMobile from "../hooks/useIsMobile"
+import useTypingEffect  from "../hooks/typingEffect"
 import "./home.css"
 
 
@@ -15,6 +22,7 @@ export function Home() {
 
     const isMobile = useIsMobile();
     useSlideUp();
+    useTypingEffect();
 
     const images = [slide_1, slide_2, slide_3, slide_4];
     const [currentSlide, setCurrentSlide] = useState(0);
@@ -27,7 +35,7 @@ export function Home() {
     }, []);
 
 
-   
+
 
 
 
@@ -100,13 +108,14 @@ export function Home() {
                                 src="https://cdn.lordicon.com/eaegfqtv.json"
                                 trigger="hover"
                                 colors="primary:#121331,secondary:#808080"
-                                style={{ 
-                                    width: isMobile ? "265px" : "80px", 
-                                    height: isMobile ? "90px" : "80px" }}>
+                                style={{
+                                    width: isMobile ? "265px" : "80px",
+                                    height: isMobile ? "90px" : "80px"
+                                }}>
                             </lord-icon>
                             <div className="uni-content-div">
                                 <h3>Cost Effective</h3>
-                                <p>We deliver affordable, high quality digital solutions.{ isMobile ? '' : <br />}
+                                <p>We deliver affordable, high quality digital solutions.{isMobile ? '' : <br />}
                                     Smart solutions, real results all within your budget.
                                 </p>
                             </div>
@@ -116,13 +125,14 @@ export function Home() {
                                 src="https://cdn.lordicon.com/fjvfsqea.json"
                                 trigger="hover"
                                 colors="primary:#121331,secondary:#808080"
-                                style={{ 
-                                    width: isMobile ? "215px" : "80px", 
-                                    height: isMobile ? "100px" : "80px" }}>
+                                style={{
+                                    width: isMobile ? "215px" : "80px",
+                                    height: isMobile ? "100px" : "80px"
+                                }}>
                             </lord-icon>
                             <div className="uni-content-div">
                                 <h3>Transparency</h3>
-                                <p>What you see is what you get. { isMobile ? "" :<br />}
+                                <p>What you see is what you get. {isMobile ? "" : <br />}
                                     We believe trust starts with complete transparency.
                                 </p>
                             </div>
@@ -132,14 +142,15 @@ export function Home() {
                                 src="https://cdn.lordicon.com/jdgfsfzr.json"
                                 trigger="hover"
                                 colors="primary:#121331,secondary:#808080"
-                                style={{ 
-                                    width: isMobile ? "220px" : "80px", 
-                                    height: isMobile ? "90px" : "80px" }}>
+                                style={{
+                                    width: isMobile ? "220px" : "80px",
+                                    height: isMobile ? "90px" : "80px"
+                                }}>
                             </lord-icon>
                             <div className="uni-content-div">
                                 <h3>Powered by Youth</h3>
-                                <p>Young minds, sharper ideas. {isMobile ? '' :  <br /> }
-                                     We blend curiosity with skill to build impactful solutions.
+                                <p>Young minds, sharper ideas. {isMobile ? '' : <br />}
+                                    We blend curiosity with skill to build impactful solutions.
                                 </p>
                             </div>
                         </div>
@@ -148,13 +159,14 @@ export function Home() {
                                 src="https://cdn.lordicon.com/fwkrbvja.json"
                                 trigger="hover"
                                 colors="primary:#121331,secondary:#808080"
-                                style={{ 
-                                    width: isMobile ? "253px" : "80px", 
-                                    height: isMobile ? "90px" : "80px" }}>
+                                style={{
+                                    width: isMobile ? "253px" : "80px",
+                                    height: isMobile ? "90px" : "80px"
+                                }}>
                             </lord-icon>
                             <div className="uni-content-div">
                                 <h3>Innovation & Creative</h3>
-                                <p>We don’t follow trends we set them. {isMobile ? '' : <br /> }
+                                <p>We don’t follow trends we set them. {isMobile ? '' : <br />}
                                     Our ideas are original, bold, and built to make you stand out.
                                 </p>
                             </div>
@@ -163,24 +175,30 @@ export function Home() {
                     </div>
                 </section>
 
-                {/* 
+
                 <section className="section-5 slide-up">
                     <h6 className="title">Core <span>Services</span></h6>
                     <div className="solutions-grid slide-up">
                         <div className="solution-card">
-                            <div className="icon">🧑‍💻</div>
+                            <div className="icon">
+                                <img src={webDevelopment} alt="Web Computer" />
+                            </div>
                             <h2>Web Development</h2>
                             <p>We build user-friendly websites that boost your brand and bring your ideas to life with creativity and technology.</p>
                             <a href="./pages/service.html">Learn More</a>
                         </div>
                         <div className="solution-card">
-                            <div className="icon">🎨</div>
+                            <div className="icon">
+                                <img src={graphicDesign} alt="Graphic Designing" />
+                            </div>
                             <h2>Graphic Desgin</h2>
                             <p>We create bold, memorable designs that bring your brand alive with color and clear storytelling.</p>
                             <a href="./pages/service.html">Learn More</a>
                         </div>
                         <div className="solution-card">
-                            <div className="icon">🎬</div>
+                            <div className="icon">
+                                <img src={videoEditing} alt="Video Editing" />
+                            </div>
                             <h2>Video Editing</h2>
                             <p>We craft engaging videos that combine visuals and sound to capture attention and tell your story.</p>
                             <a href="./pages/service.html">Learn More</a>
@@ -191,30 +209,14 @@ export function Home() {
                     </div>
                 </section>
 
+
                 <section className="section-6">
                     <h2>Why us</h2>
                     <div className="why-div">
-                        <div className="why-text-wrapper slide-up">
-                            <p>
-                                We’re not just a service provider — we’re your growth partner.
-                                Our young and dynamic team thrives on fresh ideas, creativity, and fearless innovation.
-                                We believe in building honest, transparent relationships with our clients.
-                                With us, what you see is truly what you get — no hidden costs, no fluff.
-                                We focus on delivering high-quality results without breaking your budget.
-                                Whether it's tech development, design, or marketing — we bring precision and passion to every project.
-                                We adapt quickly, scale efficiently, and always stay ahead of trends to give you a competitive edge.
-                                Our solutions are tailored, impactful, and always driven by real results.
-                                Partner with us, and let’s build something extraordinary — together.
-                            </p>
-                            <div className="link-div">
-                                <a href="./pages/about.html">
-                                    Learn more <span>&rarr;</span>
-                                </a>
-                            </div>
-                        </div>
+                        <WhyExpandableText />
                     </div>
                 </section>
-
+                
                 <section className="section-7">
                     <div className="main-content-div">
                         <div className="back-div">
@@ -222,7 +224,8 @@ export function Home() {
                                 <h2>Start Your Journey <br /> With Us.</h2>
                             </div>
                             <div className="bottom-div">
-                                <p>Excellence isn’t optional — it’s our standard. <br />
+                                <p>
+                                    Excellence isn’t optional — it’s our standard. { isMobile ? "" : <br /> }
                                     Connect with us to elevate your vision into reality.
                                 </p>
 
@@ -232,73 +235,31 @@ export function Home() {
                                 <div className="btm-content-wrap">
                                     <div className="btm-content-div">
                                         <li>
-                                            <img src="./images/icons/check-circle.png" alt="tick" />
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/hrtsficn.json"
-                                                trigger="in"
-                                                delay="1000"
-                                                state="in-reveal"
-                                                style="width:23px;height:23px">
-                                            </lord-icon>
+                                            <img src={ checkCircle } alt="tick" />
+                                            
                                             <p>Tailored Solutions</p>
                                         </li>
                                         <li>
-                                            <img src="./images/icons/check-circle.png" alt="tick" />
-                                            <lord-icon
-                                                src="https://cdn.lordicon.com/hrtsficn.json"
-                                                trigger="in"
-                                                delay="1000"
-                                                state="in-reveal"
-                                                style="width:23px;height:23px">
-                                            </lord-icon>
+                                            <img src={ checkCircle } alt="tick" />
                                             <p>Client-First Approach</p>
                                         </li>
                                         <li>
-                                            <img src="./images/icons/check-circle.png" alt="tick" />
-                                               <lord-icon
-                                                    src="https://cdn.lordicon.com/hrtsficn.json"
-                                                    trigger="in"
-                                                    delay="1000"
-                                                    state="in-reveal"
-                                                    style="width:23px;height:23px">
-                                                </lord-icon>
-                                                <p>Reliable Partnership</p>
+                                            <img src={ checkCircle } alt="tick" />   
+                                            <p>Reliable Partnership</p>
                                         </li>
                                     </div>
                                     <div className="btm-content-div">
                                         <li>
-                                            <img src="./images/icons/check-circle.png" alt="tick" />
-                                               <lord-icon
-                                                    src="https://cdn.lordicon.com/hrtsficn.json"
-                                                    trigger="in"
-                                                    delay="1000"
-                                                    state="in-reveal"
-                                                    style="width:23px;height:23px">
-                                                </lord-icon>
-                                                <p>Creative Excellence</p>
-                                        </li>
-
-                                        <li>
-                                            <img src="./images/icons/check-circle.png" alt="tick" />
-                                                <lord-icon
-                                                    src="https://cdn.lordicon.com/hrtsficn.json"
-                                                    trigger="in"
-                                                    delay="1000"
-                                                    state="in-reveal"
-                                                    style="width:23px;height:23px">
-                                                </lord-icon>
-                                                <p>Transparent Communication</p>
+                                            <img src={ checkCircle } alt="tick" />
+                                            <p>Transparent Policies</p>
                                         </li>
                                         <li>
-                                            <img src="./images/icons/check-circle.png" alt="tick" />
-                                              <lord-icon
-                                                    src="https://cdn.lordicon.com/hrtsficn.json"
-                                                    trigger="in"
-                                                    delay="1000"
-                                                    state="in-reveal"
-                                                    style="width:23px;height:23px">
-                                                </lord-icon>
-                                                <p>Trusted Support</p>
+                                            <img src={ checkCircle } alt="tick" />
+                                            <p>Creative Excellence</p>
+                                        </li>
+                                        <li>
+                                            <img src={ checkCircle } alt="tick" />
+                                            <p>Trusted Support</p>
                                         </li>
                                     </div>
                                 </div>
@@ -313,10 +274,9 @@ export function Home() {
                                             <p>We’re quick to reply and happy to help.</p>
                                         </div>
                                     </div>
-                                    <div>
-                                        <img src="./images/icons/right-arrow (1).png" alt="Right-arrow" />
+                                    <div className="contact-img-div">
+                                        <img src={rightArrow} alt="Right-arrow" />
                                     </div>
-
                                     <div className="contact-content">
                                         <h4>2</h4>
                                         <div>
@@ -324,8 +284,8 @@ export function Home() {
                                             <p>Share your vision, we’ll guide the path.</p>
                                         </div>
                                     </div>
-                                    <div>
-                                        <img src="./images/icons/right-arrow (1).png" alt="Right-arrow" />
+                                    <div className="contact-img-div">
+                                        <img src={rightArrow} alt="Right-arrow" />
                                     </div>
                                     <div className="contact-content">
                                         <h4>3</h4>
@@ -382,7 +342,7 @@ export function Home() {
                             </form>
                         </div>
                     </div>
-                </section> */}
+                </section>
             </main>
 
 
