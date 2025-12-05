@@ -527,10 +527,7 @@ button:focus {
 
 .section-7 {
     margin: 0rem 4.5rem;
-    min-height: 105vh;
-    height: auto;
-
-
+    padding-bottom: 15rem;
 }
 
 
@@ -589,6 +586,8 @@ button:focus {
     width: 0;
     opacity: 0;
     transition: opacity 0.3s ease;
+    font-size: 2rem;
+    margin-left: 2rem;
 }
 
 .typing-effect.animate {
@@ -1052,7 +1051,7 @@ button:focus {
     min-width: 33rem;
 }
 
-.footer-logo-div img {
+.footer-logo-div>img {
     height: 5rem;
     margin-top: 2rem;
     margin-left: 2rem;
@@ -1082,7 +1081,8 @@ button:focus {
 }
 
 .footer-logo-div h5 a:hover {
-    color: #656ef1;
+    color: #1e68fd;
+    text-decoration: underline;
 }
 
 
@@ -1149,12 +1149,14 @@ button:focus {
 
 .gmail-div {
     height: 3rem;
-    width: 3rem;
+    width: 4rem;
 }
 
-.gmail-div svg {
+.gmail-div img {
     height: 100%;
     width: 100%;
+    object-fit: cover;
+    display: block;
 }
 
 .social-icons img {
@@ -1519,7 +1521,7 @@ button:focus {
         margin-left: 1.3rem;
     }
 
-    .link-div a{
+    .link-div a {
         font-size: 1.2rem;
     }
 
@@ -1528,6 +1530,7 @@ button:focus {
 
     .section-7 {
         margin: 2rem 0;
+        padding-bottom: 0;
     }
 
     .top-div {
@@ -1540,13 +1543,13 @@ button:focus {
         letter-spacing: 0.2rem;
     }
 
-    .typing-effect{
+    .typing-effect {
         font-size: 1.2rem;
         font-weight: 600;
         margin: 0.5rem 2rem;
-        
+
     }
-        
+
     .bottom-div>p {
         margin: 0;
         font-size: 1.3rem;
@@ -1559,9 +1562,10 @@ button:focus {
 
     .btm-content-wrap {
         width: auto;
+        margin-right: 2rem;
     }
 
-    .btm-content-div{
+    .btm-content-div {
         margin-right: 0;
     }
 
@@ -1578,26 +1582,30 @@ button:focus {
         font-size: 1.2rem;
     }
 
-    .btm-content-wrap{
-        gap: 1.2rem;
+    .btm-content-wrap {
+        gap: 1rem;
         margin-left: 3rem;
     }
 
-    .btm-content-div{
+    .btm-content-div {
         display: flex;
         flex-direction: column;
     }
 
-    .btm-content-div:nth-child(1) li:nth-child(2){
-        order: 3;
-    }
-
-
-    .btm-content-div:nth-child(2) li:nth-child(2){
+    .btm-content-div:nth-child(1) li:nth-child(2) {
         order: 1;
     }
 
-    .btm-content-div:nth-child(2) li:nth-child(1){
+    .btm-content-div:nth-child(1) li:nth-child(1) {
+        order: 3;
+    }
+
+    .btm-content-div:nth-child(1) li:nth-child(3) {
+        order: 2;
+    }
+
+
+    .btm-content-div:nth-child(2) li:nth-child(1) {
         order: 3;
     }
 
@@ -1605,7 +1613,7 @@ button:focus {
 
     /* contact section */
 
-    .h5-contact{
+    .h5-contact {
         display: none;
     }
 
@@ -1640,18 +1648,68 @@ button:focus {
     .contact-content div p {
         width: 100%;
         font-size: 1rem;
-
         line-height: 1.3rem;
         font-weight: lighter;
     }
 
+
+    /* overflow div */
+
     .over-flow-div {
-        margin-top: 3rem;
+        margin: 3rem 2rem 0rem 2rem;
         position: static;
         width: auto;
         border-radius: 0;
-        border-top: 0.1rem solid #808080;
+        border-radius: 0.8rem;
     }
+
+    .over-flow-div h5 {
+        font-size: 1.3rem;
+        letter-spacing: 0.10rem;
+        border-bottom: solid #808080 0.001rem;
+    }
+
+    .name-div {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .over-flow-div input {
+        width: 100%;
+        border: 0.01rem solid #93939a;
+        border-radius: 0.9rem;
+    }
+
+    .over-flow-div select,
+    .text-area-div textarea {
+        border: 0.01rem solid #93939a;
+        border-radius: 0.9rem;
+    }
+
+    .over-flow-div input:focus,
+    .text-area-div textarea:focus,
+    .contact-same-layout select:focus {
+        border: 0.01rem solid #0000cc;
+    }
+
+    .contact-btn-div{
+        padding: 0;
+    }
+
+    .contact-btn-div button{
+        border-radius: 0;
+    }
+
+
+    .success-message p{
+        font-size: 1.5rem;
+    }
+
+    .sam-btn{
+        font-weight: normal;
+        border-radius: 0.5rem;
+    }
+
 
 
     /* Footer */
@@ -1666,14 +1724,39 @@ button:focus {
         flex-direction: column;
     }
 
+    .footer-logo-div{
+        min-width: 0rem;
+    }
+
+    .footer-logo-div p{
+        font-size: 1.4rem;
+        margin-top: 0.3rem;
+    }
+
+    .footer-logo-div>img{
+        margin-top: 0;
+    }
+
     .footer-logo-div img,
     .footer-logo-div p,
     .footer-logo-div h5 {
         margin-left: 0;
     }
 
+    
+
     .social-div {
         text-align: left;
+    }
+
+    .social-icons{
+        margin-top: 1rem;
+    }
+
+
+    .copyright-div p{
+        font-size: 1.4rem;
+        margin-bottom: 0.2rem;
     }
 
 }

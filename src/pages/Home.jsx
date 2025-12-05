@@ -11,9 +11,11 @@ import checkCircle from "../assets/images/home/check-circle.png"
 import rightArrow from "../assets/images/home/right-arrow.png"
 import { CounterSection } from '../components/CounterSection'
 import { WhyExpandableText } from "../components/WhyExpandableText"
+import { Footer } from "../components/Footer"
+import { ContactForm } from "../components/ContactForm"
 import useSlideUp from "../hooks/useSlideUp"
 import useIsMobile from "../hooks/useIsMobile"
-import useTypingEffect  from "../hooks/typingEffect"
+import useTypingEffect from "../hooks/typingEffect"
 import "./home.css"
 
 
@@ -216,7 +218,7 @@ export function Home() {
                         <WhyExpandableText />
                     </div>
                 </section>
-                
+
                 <section className="section-7">
                     <div className="main-content-div">
                         <div className="back-div">
@@ -225,7 +227,7 @@ export function Home() {
                             </div>
                             <div className="bottom-div">
                                 <p>
-                                    Excellence isn’t optional — it’s our standard. { isMobile ? "" : <br /> }
+                                    Excellence isn’t optional — it’s our standard. {isMobile ? "" : <br />}
                                     Connect with us to elevate your vision into reality.
                                 </p>
 
@@ -235,30 +237,29 @@ export function Home() {
                                 <div className="btm-content-wrap">
                                     <div className="btm-content-div">
                                         <li>
-                                            <img src={ checkCircle } alt="tick" />
-                                            
+                                            <img src={checkCircle} alt="tick" />
                                             <p>Tailored Solutions</p>
                                         </li>
                                         <li>
-                                            <img src={ checkCircle } alt="tick" />
-                                            <p>Client-First Approach</p>
+                                            <img src={checkCircle} alt="tick" />
+                                            <p>{ isMobile ? 'Client focused' : 'Client-First Approach' }</p>
                                         </li>
                                         <li>
-                                            <img src={ checkCircle } alt="tick" />   
-                                            <p>Reliable Partnership</p>
+                                            <img src={checkCircle} alt="tick" />
+                                            <p>{ isMobile ? 'Steady Partner' : 'Reliable Partnership' }</p>
                                         </li>
                                     </div>
                                     <div className="btm-content-div">
                                         <li>
-                                            <img src={ checkCircle } alt="tick" />
+                                            <img src={checkCircle} alt="tick" />
                                             <p>Transparent Policies</p>
                                         </li>
                                         <li>
-                                            <img src={ checkCircle } alt="tick" />
-                                            <p>Creative Excellence</p>
+                                            <img src={checkCircle} alt="tick" />
+                                            <p>{ isMobile ? 'Creative Edge' : 'Creative Excellence' }</p>
                                         </li>
                                         <li>
-                                            <img src={ checkCircle } alt="tick" />
+                                            <img src={checkCircle} alt="tick" />
                                             <p>Trusted Support</p>
                                         </li>
                                     </div>
@@ -299,51 +300,15 @@ export function Home() {
                             </div>
                         </div>
                     </div>
-                    <div className="over-flow-div slide-up">
-                        <div className="contact-details-div">
-                            <h5>Start a Coversation</h5>
-                            <form action="https://api.web3forms.com/submit" method="POST">
-                                <input type="hidden" name="access_key" value="28cb935b-e79f-4479-9e3a-9f87ba942747" />
-                                    <div className="name-div">
-                                        <div>
-                                            <span>First name *</span>
-                                            <input type="text" name="First name" required />
-                                        </div>
-                                        <div>
-                                            <span>Last name *</span>
-                                            <input type="text" name="Last name" required />
-                                        </div>
-                                    </div>
-                                    <div className="contact-same-layout">
-                                        <span>Email *</span>
-                                        <input type="text" name="Email" required />
-                                    </div>
-                                    <div className="contact-same-layout">
-                                        <span>Phone *</span>
-                                        <input type="text" name="Phone no" required />
-                                    </div>
-                                    <div className="contact-same-layout">
-                                        <span>How Can We Support You? *</span>
-                                        <select name="Service" required>
-                                            <option value="" disabled selected>Select a Service</option>
-                                            <option value="Web Development">Web Development</option>
-                                            <option value="Graphic Desiging">Graphic Desiging</option>
-                                            <option value="Video Editing">Video Editing</option>
-                                            <option value="Other">Other</option>
-                                        </select>
-                                    </div>
-                                    <div className="text-area-div">
-                                        <span>Message *</span>
-                                        <textarea id="textarea" placeholder="Let us know how we can Support you...." name="Text Description" required></textarea>
-                                    </div>
-                                    <div className="contact-btn-div">
-                                        <button className="submit-btn">Submit</button>
-                                    </div>
-                            </form>
-                        </div>
+
+                    <div className="slide-up">
+                        <ContactForm />
                     </div>
+                    
                 </section>
             </main>
+            <Footer />
+          
 
 
         </>
