@@ -264,7 +264,7 @@ export function Home() {
                                     </div>
                                 </div>
 
-                                <h5>Let's Work Together</h5>
+                                <h5 className="h5-contact">Let's Work Together</h5>
 
                                 <div className="contact-content-wrap">
                                     <div className="contact-content">

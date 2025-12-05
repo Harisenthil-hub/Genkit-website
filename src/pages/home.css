@@ -1603,8 +1603,14 @@ button:focus {
 
 
 
+    /* contact section */
+
+    .h5-contact{
+        display: none;
+    }
 
     .contact-content-wrap {
+        display: none;
         margin-left: 1rem;
         margin-top: 1.5rem;
         gap: 1rem;
