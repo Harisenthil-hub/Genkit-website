@@ -64,9 +64,12 @@ export function AboutUs() {
                                 <li>
                                     <span>Our first milestone?</span> Building our own digital home the Genkit website a symbol of our unity, ambition, and the journey ahead.
                                 </li>
-                                <li>
-                                We started our journey in June 2024 by imagining and planning our digital home, a daring first step toward the future we dared to create, with no predetermined roadmap but unbridled passion.
-                                </li>
+
+                                { isMobile ? "" :  
+                                    <li>
+                                        We started our journey in June 2024 by imagining and planning our digital home, a daring first step toward the future we dared to create, with no predetermined roadmap but unbridled passion.
+                                    </li>
+                                }
                             </ul>
                         </div>
                         <div className="content-about text-content-about slide-up text-2">

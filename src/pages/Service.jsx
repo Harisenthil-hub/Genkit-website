@@ -2,13 +2,21 @@ import { NavBar } from "../components/NavBar"
 import webDevelopment from "../assets/images/service/web-development-service-tag.jpg"
 import videoEditing from "../assets/images/service/video-editing-service.jpg"
 import graphicDesign from "../assets/images/service/graphic-design-service.jpg"
+import webDevTag from "../assets/images/service/web-dev-tag-1.jpg"
+import videoEditingTag from "../assets/images/service/video-editing-tag.jpg"
+import grahphicDesignTag from "../assets/images/service/graphic-design-tag.jpg"
 import useIsMobile from "../hooks/useIsMobile"
+import useSlideUp from "../hooks/useSlideUp"
 import "./service.css"
+import { Footer } from "../components/Footer"
 
 export function Service() {
 
 
     const isMobile = useIsMobile();
+    useSlideUp();
+
+
     return (
         <>
             <NavBar />
@@ -339,7 +347,7 @@ export function Service() {
                                             points="9.4499512,6 5.6098633,18 7.710144,18 10.5,9.28125 13.289856,18 15.3901367,18 11.5500488,6"
                                         />
 
-                                       
+
                                         <linearGradient
                                             id="SVGID_2_"
                                             x1="-1.2485763"
@@ -370,7 +378,7 @@ export function Service() {
                                 </svg>
                             </div>
                             <div className="img-scroll">
-                                <svg width="9rem" height="70rem" style={{ enableBackground:"new 0 0 512 512"}} version="1.1" viewBox="0 0 512 512"xmlSpace="prese rve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><g id="_x38__x2C__Premier_Pro_x2C__Adobe"><g><rect height="510.578" style={{ fill:"#EA77FF"}} width="510.576" x="1.207" y="0.711" /><rect height="465.646" style={{ fill:"#2A0034" }}width="465.646" x="23.669" y="23.179" /><g><g><g><g id="XMLID_269_"><g><path d="M134.581,125.07c0-1.756,0.303-2.46,1.812-2.46         c11.48-0.349,34.142-0.703,57.103-0.703c59.216,0,81.805,34.455,82.103,75.205c0,55.853-41.62,77.024-86.032,77.024         c-8.457,0-16.616,0-18.731,0v79.8c0,2.105-0.605,2.809-2.114,2.809h-32.026c-1.511,0-2.114-0.703-2.114-2.459V125.07z          M170.835,240.065c2.416,0.354,6.948,0.704,19.64,0.704c23.867,0,46.829-6.807,46.829-41.935         c0-28.102-15.41-42.535-43.808-42.535c-11.783,0-20.245,0.354-22.661,0.703V240.065z" id="XMLID_270_" style={{ fill:"#EA77FF" }} /></g></g><g id="XMLID_265_"><g><path d="M382.799,179.972c1.262-0.068,2.848,0,4.113,0.354         c1.586,0.35,1.9,0.704,1.9,3.512v30.466c0,1.756-0.634,2.459-2.531,2.459c-18.044-0.703-26.572-1.27-39.458,4.006v132.146         c0,2.108-0.635,2.809-2.532,2.809h-33.228c-1.901,0-2.535-0.7-2.535-2.809v-118.38c0-15.457-0.635-27.125-1.582-38.716         c-0.314-1.407,0.316-2.111,1.901-2.111C308.848,193.707,339.454,182.307,382.799,179.972z" id="XMLID_267_" style={{ fill:"#EA77FF"}} /></g></g></g></g></g></g></g><g id="Layer_1" /></svg>
+                                <svg width="9rem" height="70rem" style={{ enableBackground: "new 0 0 512 512" }} version="1.1" viewBox="0 0 512 512" xmlSpace="prese rve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><g id="_x38__x2C__Premier_Pro_x2C__Adobe"><g><rect height="510.578" style={{ fill: "#EA77FF" }} width="510.576" x="1.207" y="0.711" /><rect height="465.646" style={{ fill: "#2A0034" }} width="465.646" x="23.669" y="23.179" /><g><g><g><g id="XMLID_269_"><g><path d="M134.581,125.07c0-1.756,0.303-2.46,1.812-2.46         c11.48-0.349,34.142-0.703,57.103-0.703c59.216,0,81.805,34.455,82.103,75.205c0,55.853-41.62,77.024-86.032,77.024         c-8.457,0-16.616,0-18.731,0v79.8c0,2.105-0.605,2.809-2.114,2.809h-32.026c-1.511,0-2.114-0.703-2.114-2.459V125.07z          M170.835,240.065c2.416,0.354,6.948,0.704,19.64,0.704c23.867,0,46.829-6.807,46.829-41.935         c0-28.102-15.41-42.535-43.808-42.535c-11.783,0-20.245,0.354-22.661,0.703V240.065z" id="XMLID_270_" style={{ fill: "#EA77FF" }} /></g></g><g id="XMLID_265_"><g><path d="M382.799,179.972c1.262-0.068,2.848,0,4.113,0.354         c1.586,0.35,1.9,0.704,1.9,3.512v30.466c0,1.756-0.634,2.459-2.531,2.459c-18.044-0.703-26.572-1.27-39.458,4.006v132.146         c0,2.108-0.635,2.809-2.532,2.809h-33.228c-1.901,0-2.535-0.7-2.535-2.809v-118.38c0-15.457-0.635-27.125-1.582-38.716         c-0.314-1.407,0.316-2.111,1.901-2.111C308.848,193.707,339.454,182.307,382.799,179.972z" id="XMLID_267_" style={{ fill: "#EA77FF" }} /></g></g></g></g></g></g></g><g id="Layer_1" /></svg>
                             </div>
                             <div className="img-scroll">
                                 <svg width="9rem" height="70rem" viewBox="0 0 512 512" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" enableBackground="new 0 0 512 512"><path d="M1.207.711h510.576v510.578H1.207z" fill="#7ac1ff" className="fill-d291ff"></path><path d="M23.669 23.179h465.646v465.646H23.669z" fill="#1f0040" className="fill-1f0040"></path><path d="m144.792 290.426-18.436 62.838c-.299 2.164-1.211 2.889-3.021 2.889h-30.82c-2.114 0-2.719-1.083-2.114-3.614 16.318-55.248 43.814-147.337 63.153-209.812.903-3.61 1.811-7.224 2.416-19.863 0-1.441.908-2.166 1.811-2.166h41.7c1.513 0 1.811.363 2.417 1.807 22.365 74.029 46.835 155.644 69.801 230.397.604 2.168 0 3.251-1.812 3.251h-33.841c-1.513 0-2.119-.725-2.723-2.169l-19.339-63.558h-69.192zm61.035-35.39c-6.042-24.197-20.847-72.946-26.891-98.226h-.302c-4.53 23.836-16.923 64.641-25.987 98.226h53.18zM318.394 276.835c.618 27.006 15.095 46.2 46.209 46.2 11.399 0 25.263-2.135 38.508-8.886.925-.354 1.85 0 1.85 1.777v28.43c0 2.488-.618 3.195-1.85 3.912-12.014 7.104-26.489 9.593-46.209 9.946-56.065 0-76.397-44.065-76.397-88.842 0-50.82 26.188-90.982 72.392-90.982 45.288 0 63.464 39.804 63.464 72.857 0 15.278-1.543 22.387-2.774 23.457-3.695 1.777-15.401 2.131-32.345 2.131h-62.848zm49.29-27.364c11.399 0 13.25-1.423 13.557-2.846v-3.908c0-10.659-6.163-33.761-29.883-33.761-20.025 0-30.501 17.771-32.964 40.515h49.29z" fill="#7ac1ff" className="fill-d291ff"></path></svg>
@@ -382,81 +390,91 @@ export function Service() {
                                 <svg width="9rem" height="70rem" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="M18.5 9.51a4.22 4.22 0 0 1-1.91-1.34A5.77 5.77 0 0 0 12 6a4.72 4.72 0 0 0-5 4 3.23 3.23 0 0 1 3.5-1.49 4.32 4.32 0 0 1 1.91 1.35A5.77 5.77 0 0 0 17 12a4.72 4.72 0 0 0 5-4 3.2 3.2 0 0 1-3.5 1.51zm-13 4.98a4.22 4.22 0 0 1 1.91 1.34A5.77 5.77 0 0 0 12 18a4.72 4.72 0 0 0 5-4 3.23 3.23 0 0 1-3.5 1.49 4.32 4.32 0 0 1-1.91-1.35A5.8 5.8 0 0 0 7 12a4.72 4.72 0 0 0-5 4 3.2 3.2 0 0 1 3.5-1.51z" fill="#6d28d9" className="fill-000000"></path></svg>
                             </div>
                             <div className="img-scroll">
-                                <svg width="9rem" height="70rem" style={{ fillRule:"evenodd",clipRule:"evenodd",strokeLinejoin:"round",strokeMiterlimit:"2"}} version="1.1" viewBox="0 0 128 128"  xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><g transform="matrix(1.25305,0,0,1.25305,-16.3076,4.57191)"><circle cx="64" cy="47.5" r="9.3" style={{fill:"rgb(97,218,251)" }} /><path d="M64,81.7C71.3,88.8 78.5,93 84.3,93C86.2,93 88,92.6 89.5,91.7C94.7,88.7 96.6,81.2 94.8,70.5C94.5,68.6 94.1,66.7 93.6,64.7C95.6,64.1 97.4,63.5 99.2,62.9C109.3,59 114.9,53.6 114.9,47.7C114.9,41.7 109.3,36.3 99.2,32.5C97.4,31.8 95.6,31.2 93.6,30.7C94.1,28.7 94.5,26.8 94.8,24.9C96.5,14 94.6,6.4 89.4,3.4C87.9,2.5 86.1,2.1 84.2,2.1C78.5,2.1 71.2,6.3 63.9,13.4C56.7,6.3 49.5,2.1 43.7,2.1C41.8,2.1 40,2.5 38.5,3.4C33.3,6.4 31.4,13.9 33.2,24.6C33.5,26.5 33.9,28.4 34.4,30.4C32.4,31 30.6,31.6 28.8,32.2C18.7,36.1 13.1,41.5 13.1,47.4C13.1,53.4 18.7,58.8 28.8,62.6C30.6,63.3 32.4,63.9 34.4,64.4C33.9,66.4 33.5,68.3 33.2,70.2C31.5,80.9 33.4,88.5 38.5,91.4C40,92.3 41.8,92.7 43.7,92.7C49.5,92.9 56.7,88.7 64,81.7ZM58.4,68.2C60.2,68.3 62.1,68.3 64,68.3C65.9,68.3 67.8,68.3 69.6,68.2C67.8,70.6 65.9,72.8 64,74.9C62.1,72.8 60.2,70.6 58.4,68.2ZM46,57.9C47,59.6 47.9,61.2 49,62.8C45.9,62.4 43,61.9 40.2,61.3C41.1,58.6 42.1,55.8 43.3,53C44.1,54.6 45,56.3 46,57.9ZM40.2,33.8C43,33.2 45.9,32.7 49,32.3C48,33.9 47,35.5 46,37.2C45,38.9 44.1,40.5 43.3,42.2C42,39.3 41,36.5 40.2,33.8ZM45.7,47.5C47,44.8 48.4,42.1 50,39.4C51.5,36.8 53.2,34.2 54.9,31.6C57.9,31.4 60.9,31.3 64,31.3C67.2,31.3 70.2,31.4 73.1,31.6C74.9,34.2 76.5,36.8 78,39.4C79.6,42.1 81,44.8 82.3,47.5C81,50.2 79.6,52.9 78,55.6C76.5,58.2 74.8,60.8 73.1,63.4C70.1,63.6 67.1,63.7 64,63.7C60.8,63.7 57.8,63.6 54.9,63.4C53.1,60.8 51.5,58.2 50,55.6C48.4,52.9 47,50.2 45.7,47.5ZM84.8,42.1L82.1,37.1C81.1,35.4 80.2,33.8 79.1,32.2C82.2,32.6 85.1,33.1 87.9,33.7C87,36.5 86,39.3 84.8,42.1ZM84.8,52.9C86,55.7 87,58.5 87.9,61.2C85.1,61.8 82.2,62.3 79.1,62.7C80.1,61.1 81.1,59.5 82.1,57.8C83,56.3 83.9,54.6 84.8,52.9ZM87.1,87.6C86.3,88.1 85.3,88.3 84.2,88.3C79.3,88.3 73.2,84.3 67.2,78.3C70.1,75.2 72.9,71.7 75.7,67.8C80.4,67.4 84.9,66.7 89.1,65.7C89.6,67.5 89.9,69.3 90.2,71.1C91.6,79.6 90.5,85.7 87.1,87.6ZM92.3,34.9C103.5,38.1 110.2,43 110.2,47.5C110.2,51.4 105.6,55.3 97.5,58.4C95.9,59 94.1,59.6 92.3,60.1C91,56 89.4,51.8 87.4,47.5C89.4,43.2 91.1,39 92.3,34.9ZM84.3,6.7C85.4,6.7 86.3,6.9 87.2,7.4C90.5,9.3 91.7,15.3 90.3,23.9C90,25.6 89.6,27.4 89.2,29.3C85,28.4 80.5,27.7 75.8,27.2C73.1,23.3 70.2,19.8 67.3,16.7C73.3,10.8 79.4,6.7 84.3,6.7ZM69.6,26.8C67.8,26.7 65.9,26.7 64,26.7C62.1,26.7 60.2,26.7 58.4,26.8C60.2,24.4 62.1,22.2 64,20.1C65.9,22.2 67.8,24.5 69.6,26.8ZM40.9,7.4C41.7,6.9 42.7,6.7 43.8,6.7C48.7,6.7 54.8,10.7 60.8,16.7C57.9,19.8 55.1,23.3 52.3,27.2C47.6,27.6 43.1,28.3 38.9,29.3C38.4,27.5 38.1,25.7 37.8,23.9C36.4,15.4 37.5,9.4 40.9,7.4ZM35.7,60.1C24.5,56.9 17.8,52 17.8,47.5C17.8,43.6 22.4,39.7 30.5,36.6C32.1,36 33.9,35.4 35.7,34.9C37,39 38.6,43.2 40.6,47.5C38.6,51.8 36.9,56.1 35.7,60.1ZM37.8,71.1C38.1,69.4 38.5,67.6 38.9,65.7C43.1,66.6 47.6,67.3 52.3,67.8C55,71.7 57.9,75.2 60.8,78.3C54.8,84.2 48.7,88.3 43.8,88.3C42.7,88.3 41.8,88.1 40.9,87.6C37.5,85.7 36.4,79.6 37.8,71.1Z" style={{ fill:"rgb(97,218,251)",fillRule:"nonzero" }} /></g></svg>
+                                <svg width="9rem" height="70rem" style={{ fillRule: "evenodd", clipRule: "evenodd", strokeLinejoin: "round", strokeMiterlimit: "2" }} version="1.1" viewBox="0 0 128 128" xmlSpace="preserve" xmlns="http://www.w3.org/2000/svg" xmlnsXlink="http://www.w3.org/1999/xlink"><g transform="matrix(1.25305,0,0,1.25305,-16.3076,4.57191)"><circle cx="64" cy="47.5" r="9.3" style={{ fill: "rgb(97,218,251)" }} /><path d="M64,81.7C71.3,88.8 78.5,93 84.3,93C86.2,93 88,92.6 89.5,91.7C94.7,88.7 96.6,81.2 94.8,70.5C94.5,68.6 94.1,66.7 93.6,64.7C95.6,64.1 97.4,63.5 99.2,62.9C109.3,59 114.9,53.6 114.9,47.7C114.9,41.7 109.3,36.3 99.2,32.5C97.4,31.8 95.6,31.2 93.6,30.7C94.1,28.7 94.5,26.8 94.8,24.9C96.5,14 94.6,6.4 89.4,3.4C87.9,2.5 86.1,2.1 84.2,2.1C78.5,2.1 71.2,6.3 63.9,13.4C56.7,6.3 49.5,2.1 43.7,2.1C41.8,2.1 40,2.5 38.5,3.4C33.3,6.4 31.4,13.9 33.2,24.6C33.5,26.5 33.9,28.4 34.4,30.4C32.4,31 30.6,31.6 28.8,32.2C18.7,36.1 13.1,41.5 13.1,47.4C13.1,53.4 18.7,58.8 28.8,62.6C30.6,63.3 32.4,63.9 34.4,64.4C33.9,66.4 33.5,68.3 33.2,70.2C31.5,80.9 33.4,88.5 38.5,91.4C40,92.3 41.8,92.7 43.7,92.7C49.5,92.9 56.7,88.7 64,81.7ZM58.4,68.2C60.2,68.3 62.1,68.3 64,68.3C65.9,68.3 67.8,68.3 69.6,68.2C67.8,70.6 65.9,72.8 64,74.9C62.1,72.8 60.2,70.6 58.4,68.2ZM46,57.9C47,59.6 47.9,61.2 49,62.8C45.9,62.4 43,61.9 40.2,61.3C41.1,58.6 42.1,55.8 43.3,53C44.1,54.6 45,56.3 46,57.9ZM40.2,33.8C43,33.2 45.9,32.7 49,32.3C48,33.9 47,35.5 46,37.2C45,38.9 44.1,40.5 43.3,42.2C42,39.3 41,36.5 40.2,33.8ZM45.7,47.5C47,44.8 48.4,42.1 50,39.4C51.5,36.8 53.2,34.2 54.9,31.6C57.9,31.4 60.9,31.3 64,31.3C67.2,31.3 70.2,31.4 73.1,31.6C74.9,34.2 76.5,36.8 78,39.4C79.6,42.1 81,44.8 82.3,47.5C81,50.2 79.6,52.9 78,55.6C76.5,58.2 74.8,60.8 73.1,63.4C70.1,63.6 67.1,63.7 64,63.7C60.8,63.7 57.8,63.6 54.9,63.4C53.1,60.8 51.5,58.2 50,55.6C48.4,52.9 47,50.2 45.7,47.5ZM84.8,42.1L82.1,37.1C81.1,35.4 80.2,33.8 79.1,32.2C82.2,32.6 85.1,33.1 87.9,33.7C87,36.5 86,39.3 84.8,42.1ZM84.8,52.9C86,55.7 87,58.5 87.9,61.2C85.1,61.8 82.2,62.3 79.1,62.7C80.1,61.1 81.1,59.5 82.1,57.8C83,56.3 83.9,54.6 84.8,52.9ZM87.1,87.6C86.3,88.1 85.3,88.3 84.2,88.3C79.3,88.3 73.2,84.3 67.2,78.3C70.1,75.2 72.9,71.7 75.7,67.8C80.4,67.4 84.9,66.7 89.1,65.7C89.6,67.5 89.9,69.3 90.2,71.1C91.6,79.6 90.5,85.7 87.1,87.6ZM92.3,34.9C103.5,38.1 110.2,43 110.2,47.5C110.2,51.4 105.6,55.3 97.5,58.4C95.9,59 94.1,59.6 92.3,60.1C91,56 89.4,51.8 87.4,47.5C89.4,43.2 91.1,39 92.3,34.9ZM84.3,6.7C85.4,6.7 86.3,6.9 87.2,7.4C90.5,9.3 91.7,15.3 90.3,23.9C90,25.6 89.6,27.4 89.2,29.3C85,28.4 80.5,27.7 75.8,27.2C73.1,23.3 70.2,19.8 67.3,16.7C73.3,10.8 79.4,6.7 84.3,6.7ZM69.6,26.8C67.8,26.7 65.9,26.7 64,26.7C62.1,26.7 60.2,26.7 58.4,26.8C60.2,24.4 62.1,22.2 64,20.1C65.9,22.2 67.8,24.5 69.6,26.8ZM40.9,7.4C41.7,6.9 42.7,6.7 43.8,6.7C48.7,6.7 54.8,10.7 60.8,16.7C57.9,19.8 55.1,23.3 52.3,27.2C47.6,27.6 43.1,28.3 38.9,29.3C38.4,27.5 38.1,25.7 37.8,23.9C36.4,15.4 37.5,9.4 40.9,7.4ZM35.7,60.1C24.5,56.9 17.8,52 17.8,47.5C17.8,43.6 22.4,39.7 30.5,36.6C32.1,36 33.9,35.4 35.7,34.9C37,39 38.6,43.2 40.6,47.5C38.6,51.8 36.9,56.1 35.7,60.1ZM37.8,71.1C38.1,69.4 38.5,67.6 38.9,65.7C43.1,66.6 47.6,67.3 52.3,67.8C55,71.7 57.9,75.2 60.8,78.3C54.8,84.2 48.7,88.3 43.8,88.3C42.7,88.3 41.8,88.1 40.9,87.6C37.5,85.7 36.4,79.6 37.8,71.1Z" style={{ fill: "rgb(97,218,251)", fillRule: "nonzero" }} /></g></svg>
                             </div>
                         </div>
                     </div>
                 </section>
 
-                {/* 
+
                 <section className="section-4-service">
-                    <h2>Complete <span>Solutions</span></h2>
+                    {isMobile ?
+                        <h2>Smart <span>Solutions</span></h2> :
+                        <h2>Complete <span>Solutions</span></h2>
+                    }
                     <div className="content-wrapper-service" id="Web-Development">
                         <div className="text-grid-service text-1-service">
                             <h4>Web Development</h4>
-                            <p>
-                                <ul>
-                                    <li>
-                                        <span>Custom-designed websites</span> tailored to match your brand and business goals.We build unique, user-focused websites that reflect your identity and drive engagement.
-                                    </li>
+
+                            <ul>
+                                <li>
+                                    <span>Custom-designed websites</span> tailored to match your brand and business goals.We build unique, user-focused websites that reflect your identity and drive engagement.
+                                </li>
+                                { isMobile ? "" : 
                                     <li>
                                         Secure and scalable solutions that grow with your business.From <span>startups to enterprises</span>, we create future-ready websites that adapt as you expand.
                                     </li>
-                                    <li>
-                                        Ongoing support and maintenance to keep your site running smoothly.We offer continuous updates, security checks, and improvements for long-term success.
-                                    </li>
-                                </ul>
-                            </p>
+                                }
+                                <li>
+                                    Ongoing support and maintenance to keep your site running smoothly.We offer continuous updates, security checks, and improvements for long-term success.
+                                </li>
+                            </ul>
                         </div>
                         <div className="img-grid-service slide-up img-1-service">
-                            <img src="../Images/web-dev-tag.jpg" alt="Web-Development">
+                            <img src={ webDevTag } alt="Web-Development" />
                         </div>
                         <div className="img-grid-service slide-up img-2-service" id="Video-Editing">
-                            <img src="../Images/video-editing-tag.jpg" alt="Video-Editing">
+                            <img src={videoEditingTag} alt="Video-Editing" />
                         </div>
                         <div className="text-grid-service text-2-service" >
                             <h4>Video Editing</h4>
-                            <p>
-                                <ul>
-                                    <li>
-                                        We craft videos that align with your brand’s tone, delivering clear and engaging storytelling.
-                                        Our edits include high-quality visuals, crisp audio, and seamless motion for maximum impact.
-                                    </li>
-                                    <li>
-                                        Optimized videos for all platforms— <span>YouTube, Instagram, Reels, and more</span>.We format content to perform perfectly across social media, web, and mobile platforms.
-                                    </li>
+
+                            <ul>
+                                <li>
+                                    We craft videos that align with your brand’s tone, delivering clear and engaging storytelling.
+                                    Our edits include high-quality visuals, crisp audio, and seamless motion for maximum impact.
+                                </li>
+                                <li>
+                                    Optimized videos for all platforms <span>YouTube, Instagram, Reels, and more</span>. We format content to perform perfectly across social media, web, and mobile platforms.
+                                </li>
+                                { isMobile ? "" :
                                     <li>
                                         Quick turnaround and revisions to ensure perfect final output.Timely delivery with flexible edits means your video is polished and ready when you need it.
                                     </li>
-                                </ul>
-                            </p>
+                                }
+                            </ul>
+
                         </div>
                         <div className="text-grid-service text-3-service" >
                             <h4>Graphic Desiging</h4>
-                            <p>
-                                <ul>
-                                    <li>
-                                        Visually striking designs that communicate your brand's identity.
-                                        We design impactful visuals that reflect your brand values, voice, and personality.
-                                    </li>
-                                    <li>
-                                        <span>Custom logos, banners, and </span><span>social media creatives</span> made to stand out.From unique logos to engaging posts, our designs help your brand shine across platforms.
-                                    </li>
+
+                            <ul>
+                                <li>
+                                    Visually striking designs that communicate your brand's identity.
+                                    We design impactful visuals that reflect your brand values, voice, and personality.
+                                </li>
+                                <li>
+                                    <span>Custom logos, banners, and </span><span>social media creatives</span> made to stand out.From unique logos to engaging posts, our designs help your brand shine across platforms.
+                                </li>
+                                { isMobile ? "" :
                                     <li>
                                         Print-ready and digital-friendly assets for any platform or format. Whether it’s for online use or physical print, we ensure flawless resolution and consistency.
-
                                     </li>
+                                }
 
-                                </ul>
-                            </p>
+                            </ul>
+
                         </div>
                         <div className="img-grid-service slide-up img-3-service" id="Graphic-Desiging">
-                            <img src="../Images/graphic-design-tag.jpg" alt="Graphic-Desiging">
+                            <img src={grahphicDesignTag} alt="Graphic-Desiging" />
                         </div>
                     </div>
-                    <div className="line-div"></div>
+                    <div className="line-div-service"></div>
                 </section>
 
+                <Footer />
+
+                {/* 
                 <section className="section-7 section-5-about section-5-service">
                     <div className="main-content-div">
                         <div className="back-div">

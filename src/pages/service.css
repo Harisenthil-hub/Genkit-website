@@ -228,7 +228,7 @@ body{
 }
 
 .img-grid-service{
-    width: 80%;
+    width: 70%;
     height: 30rem;
     overflow: hidden;
     display: flex;
@@ -242,6 +242,7 @@ body{
 .img-grid-service img{
     width: 100%;
     height: 100%;
+    object-fit: cover;
     position: absolute;
 
 }
@@ -271,12 +272,12 @@ body{
     font-weight: bold;
 }
 
-.line-div{
+.line-div-service{
     width: 0.10rem;
     background-color: #0000cc;
     position: absolute;
     top: 9.49rem;
-    height: 98rem;
+    height: 101rem;
     bottom: 0;
     left: 51.5%;
     transform: translateX(-50%);
@@ -337,6 +338,10 @@ body{
         padding: 1rem;
     }
 
+    .content-service p{
+        font-size: 1.2rem;
+    }
+
     .content-service h4{
         margin-top: 0rem;
     }
@@ -366,7 +371,12 @@ body{
     /* Section-4-service */
 
     .section-4-service{
-        margin: 0rem;
+      margin: 3rem;
+    }
+
+    .section-4-service h2{
+        font-size: 2.6rem;
+        margin: 1.5rem 0rem 0rem 0rem;
     }
 
 
@@ -375,14 +385,36 @@ body{
         display: flex;
         flex-direction: column;
         flex-wrap: wrap;
-        padding: 2rem 0;
-        object-fit: cover;
+        padding: 0rem 0rem;
+        gap: 0.5rem;
     }
 
 
     .img-content-service img{
         height: 100%;
         width: 100%;
+    }
+
+    
+    .text-grid-service{
+       align-items: normal; 
+       margin-top: 1rem;   
+    }
+
+    .text-grid-service ul{
+        list-style: none;
+        width: 100%;
+    }
+
+
+    .img-grid-service{
+        width: 100%;
+        height: 25rem;
+        margin-top: 2rem;
+    }
+
+    .img-grid-service img{
+        object-fit: cover;
     }
 
 
@@ -410,15 +442,11 @@ body{
         order: 5;
     }
 
-    .line-div{
+    .line-div-service{
         display: none;
     }
 
-    .text-grid-service{
-        text-align: center;
-        list-style-position: outside;
-        
-    }
+    
 
     /* Section-5-service */
 

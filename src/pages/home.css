@@ -511,7 +511,7 @@ button:focus {
 .slide-up {
     opacity: 0;
     transform: translateY(50px);
-    transition: all 0.6s ease-out;
+    transition: all 0.3s ease-out;
 }
 
 .slide-up.show {
