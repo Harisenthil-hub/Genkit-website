@@ -25,9 +25,9 @@ export function NavBar() {
                     </div>
                     <div className={ `nav-links ${navOpen ? "active" : ""}`}>
                         <ul>
-                            <li><Link href="./index.html">Home</Link></li>
-                            <li><Link href="./pages/about.html">About Us</Link></li>
-                            <li><Link href="./pages/service.html">Service</Link></li>
+                            <li><Link to="/" >Home</Link></li>
+                            <li><Link to="/about-us">About Us</Link></li>
+                            <li><Link to="/service">Service</Link></li>
                             <li><Link href="./pages/contact.html">Contact</Link></li>
                         </ul>
                     </div>

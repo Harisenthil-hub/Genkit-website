@@ -43,7 +43,6 @@ button:focus {
 .logo-div {
     display: flex;
     align-items: center;
-    width: 9rem;
     height: 7.5rem;
     margin-left: 2rem;
 
@@ -1149,7 +1148,6 @@ button:focus {
 
 .gmail-div {
     height: 3rem;
-    width: 4rem;
 }
 
 .gmail-div img {
@@ -1743,10 +1741,25 @@ button:focus {
         margin-left: 0;
     }
 
+    .footer-logo-div .gmail a{
+        font-size: 1.4rem;
+    }
+
+    .footer-quick-links h3{
+        font-size: 1.5rem;
+    }
+
+    .footer-quick-links li a{
+        font-size: 1.3rem;
+    }
     
 
     .social-div {
         text-align: left;
+    }
+
+    .social-div h2{
+        font-size: 1.6rem;
     }
 
     .social-icons{

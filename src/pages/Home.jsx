@@ -9,6 +9,7 @@ import graphicDesign from "../assets/images/home/graphic-design.png"
 import videoEditing from "../assets/images/home/video-editing.png"
 import checkCircle from "../assets/images/home/check-circle.png"
 import rightArrow from "../assets/images/home/right-arrow.png"
+import logoBrowser from "../assets/images/logo-browser.png"
 import { CounterSection } from '../components/CounterSection'
 import { WhyExpandableText } from "../components/WhyExpandableText"
 import { Footer } from "../components/Footer"
@@ -43,6 +44,7 @@ export function Home() {
 
     return (
         <>
+            <link rel="icon" type="image/png" href={ logoBrowser } />
             <NavBar />
             <main>
                 <section className="section-1">
@@ -242,11 +244,11 @@ export function Home() {
                                         </li>
                                         <li>
                                             <img src={checkCircle} alt="tick" />
-                                            <p>{ isMobile ? 'Client focused' : 'Client-First Approach' }</p>
+                                            <p>{isMobile ? 'Client focused' : 'Client-First Approach'}</p>
                                         </li>
                                         <li>
                                             <img src={checkCircle} alt="tick" />
-                                            <p>{ isMobile ? 'Steady Partner' : 'Reliable Partnership' }</p>
+                                            <p>{isMobile ? 'Steady Partner' : 'Reliable Partnership'}</p>
                                         </li>
                                     </div>
                                     <div className="btm-content-div">
@@ -256,7 +258,7 @@ export function Home() {
                                         </li>
                                         <li>
                                             <img src={checkCircle} alt="tick" />
-                                            <p>{ isMobile ? 'Creative Edge' : 'Creative Excellence' }</p>
+                                            <p>{isMobile ? 'Creative Edge' : 'Creative Excellence'}</p>
                                         </li>
                                         <li>
                                             <img src={checkCircle} alt="tick" />
@@ -301,14 +303,18 @@ export function Home() {
                         </div>
                     </div>
 
-                    <div className="slide-up">
+                    { isMobile ?
+                        <div className="slide-up">
+                            <ContactForm />
+                        </div> :
                         <ContactForm />
-                    </div>
-                    
+                    }
+
+
                 </section>
             </main>
             <Footer />
-          
+
 
 
         </>
