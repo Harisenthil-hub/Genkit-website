@@ -1,26 +1,35 @@
 import { NavBar } from "../components/NavBar";
+import laptop from "../assets/images/contact/laptop.jpg"
+import useSlideUp from "../hooks/useSlideUp"
+import "./contact.css"
+import FAQList from "../components/FaqList";
+import FaqImg from "../assets/images/contact/FAQ-CONTACT.jpg"
+
 
 
 export function Contact() {
+
+    useSlideUp();
+
     return (
         <>
             <NavBar />
             <main>
-                <section class="section-1-contact">
-                    <div class="space-div"></div>
-                    <div class="icon-div">
-                        <span class="icon-content">
+                <section className="section-1-contact">
+                    <div className="space-div"></div>
+                    <div className="icon-div">
+                        <span className="icon-content">
                             <lord-icon
                                 src="https://cdn.lordicon.com/kxnplube.json"
                                 trigger="in"
                                 colors="primary:#f5f5f5,secondary:#808080"
-                                style={{ width:"3rem",height:"3rem" }}>
+                                style={{ width: "3rem", height: "3rem" }}>
                             </lord-icon>
                             <span>Contact</span>
                         </span>
                     </div>
-                    <div class="tagline-main">
-                        <div class="tagline">
+                    <div className="tagline-main">
+                        <div className="tagline">
                             <h1>Turning Vision into Reality <br /> Begins Here.</h1>
                         </div>
                         <p>One Message. Endless Opportunities.</p>
@@ -29,46 +38,48 @@ export function Contact() {
                 </section>
 
 
-                {/* <section class="section-2-contact slide-up">
-                    <img src="../Images/laptop.jpg" alt="Workspace">
+                <section className="section-2-contact slide-up">
+                    <img src={laptop} alt="Workspace" />
                 </section>
 
 
-                <section class="section-3-contact">
+                <section className="section-3-contact">
                     <h2>FA<span>Q</span></h2>
-                    <div class="contact-content">
-                        <div class="faq-container">
-                            <div class="faq-wrapper">
-                                <div class="faq-item" data-index="0">
-                                    <div class="faq-question">How do I get started with Genkit?</div>
-                                    <div class="faq-answer">You can contact us via our website's contact form, email, or social media. We'll schedule a call to understand your needs and provide a custom solution.</div>
+                    <div className="contact-content-service">
+                        
+                        <div className="faq-container">
+                            <FAQList />
+                            {/* <div className="faq-wrapper">
+                                <div className="faq-item" data-index="0">
+                                    <div className="faq-question">How do I get started with Genkit?</div>
+                                    <div className="faq-answer">You can contact us via our website's contact form, email, or social media. We'll schedule a call to understand your needs and provide a custom solution.</div>
                                 </div>
 
-                                <div class="faq-item" data-index="1">
-                                    <div class="faq-question">How experienced is the Genkit team?</div>
-                                    <div class="faq-answer">Each of our 8 team members has hands-on experience in their respective fields, ensuring top-quality service and innovation.</div>
+                                <div className="faq-item" data-index="1">
+                                    <div className="faq-question">How experienced is the Genkit team?</div>
+                                    <div className="faq-answer">Each of our 8 team members has hands-on experience in their respective fields, ensuring top-quality service and innovation.</div>
                                 </div>
 
-                                <div class="faq-item" data-index="2">
-                                    <div class="faq-question">How long does it take to build a website?</div>
-                                    <div class="faq-answer">Timelines vary depending on the project scope. A simple website may take 1–2 weeks, while complex apps could take 1–2 months.</div>
+                                <div className="faq-item" data-index="2">
+                                    <div className="faq-question">How long does it take to build a website?</div>
+                                    <div className="faq-answer">Timelines vary depending on the project scope. A simple website may take 1–2 weeks, while complex apps could take 1–2 months.</div>
                                 </div>
 
-                                <div class="faq-item faq-4" data-index="3">
-                                    <div class="faq-question">Can you work with clients outside our city/country?</div>
-                                    <div class="faq-answer">Yes, Genkit proudly serves clients globally through online collaboration tools.</div>
+                                <div className="faq-item faq-4" data-index="3">
+                                    <div className="faq-question">Can you work with clients outside our city/country?</div>
+                                    <div className="faq-answer">Yes, Genkit proudly serves clients globally through online collaboration tools.</div>
                                 </div>
 
-                                <div class="faq-item faq-5" data-index="4">
-                                    <div class="faq-question">What happens if I’m not satisfied with the final result?</div>
-                                    <div class="faq-answer">If you're not satisfied, we’ll revise the work based on your feedback until it meets your expectations, within the agreed scope.</div>
+                                <div className="faq-item faq-5" data-index="4">
+                                    <div className="faq-question">What happens if I’m not satisfied with the final result?</div>
+                                    <div className="faq-answer">If you're not satisfied, we’ll revise the work based on your feedback until it meets your expectations, within the agreed scope.</div>
 
                                 </div>
-                            </div>
+                            </div> */}
                         </div>
 
-                        <div class="contact-img slide-up">
-                            <img src="../Images/FAQ-CONTACT.jpg" alt="fREQUENTLY ASKED QUESTIONS">
+                        <div className="contact-img">
+                            <img src={ FaqImg } alt="fREQUENTLY ASKED QUESTIONS" />
                         </div>
 
                     </div>
@@ -79,41 +90,41 @@ export function Contact() {
                 </section>
 
 
-
-                <section class="section-4-contact">
+                {/*                  
+                <section className="section-4-contact">
                     <h2>How We <span>Work</span></h2>
 
-                    <div class="scroll-line-container">
-                        <div class="line">
-                            <div class="blue-line"></div>
+                    <div className="scroll-line-container">
+                        <div className="line">
+                            <div className="blue-line"></div>
 
-                            <div class="line-point" style="left: 12%;"></div>
-                            <div class="line-point" style="left: 50%;"></div>
-                            <div class="line-point" style="left: 88%;"></div>
+                            <div className="line-point" style="left: 12%;"></div>
+                            <div className="line-point" style="left: 50%;"></div>
+                            <div className="line-point" style="left: 88%;"></div>
 
-                            <div class="dot" id="movingDot" style="left: 8%;"></div>
+                            <div className="dot" id="movingDot" style="left: 8%;"></div>
                         </div>
 
                         <!-- Cards -->
-                        <div class="fade-card" id="card1" style="left: 15%;">
+                        <div className="fade-card" id="card1" style="left: 15%;">
                             <img src="../Images/message-contact.jpg" alt="Connect">
-                                <div class="card-text">
+                                <div className="card-text">
                                     <h4>Connect</h4>
                                     <p>We discuss your ideas to understand your goals and build the right plan together.</p>
                                 </div>
                         </div>
 
-                        <div class="fade-card" id="card2" style="left: 50%;">
+                        <div className="fade-card" id="card2" style="left: 50%;">
                             <img src="../Images/Group-discussion-contact-two.jpg" alt="Plan">
-                                <div class="card-text">
+                                <div className="card-text">
                                     <h4>Plan</h4>
                                     <p>We outline clear tasks, set goals, and match your needs with effective solutions.</p>
                                 </div>
                         </div>
 
-                        <div class="fade-card" id="card3" style="left: 85%;">
+                        <div className="fade-card" id="card3" style="left: 85%;">
                             <img src="../Images/delivery-phone-contact.jpg" alt="Launch">
-                                <div class="card-text">
+                                <div className="card-text">
                                     <h4>Launch</h4>
                                     <p>
                                         We launch your project confidently with precision, testing, and quality assurance.
@@ -125,26 +136,26 @@ export function Contact() {
 
 
 
-                <!-- <section class="section-4-contact animation-contact">
+                <!-- <section className="section-4-contact animation-contact">
                     <h2>How We <span>Work</span></h2>
-                    <div class="scroll-line-container">
-                        <div class="line">
-                            <div class="blue-line"></div>
+                    <div className="scroll-line-container">
+                        <div className="line">
+                            <div className="blue-line"></div>
 
 
-                            <div class="line-point" style="left: 12%;"></div>
-                            <div class="line-point" style="left: 50%;"></div>
-                            <div class="line-point" style="left: 88%;"></div>
+                            <div className="line-point" style="left: 12%;"></div>
+                            <div className="line-point" style="left: 50%;"></div>
+                            <div className="line-point" style="left: 88%;"></div>
 
 
-                            <div class="dot" id="movingDot" style="left: 8.2%;"></div>
+                            <div className="dot" id="movingDot" style="left: 8.2%;"></div>
                         </div>
 
 
-                        <div class="fade-card" id="card1" style="left: 15%;">
-                            <div class="card-content" >
+                        <div className="fade-card" id="card1" style="left: 15%;">
+                            <div className="card-content" >
                                 <img src="../Images/message-phone-contact.jpg" alt="Connect">
-                                    <div class="card-text">
+                                    <div className="card-text">
                                         <h4>Connect</h4>
                                         <p>We understand your needs, goals, and ideas to build a strong foundation for the project.</p>
                                     </div>
@@ -152,10 +163,10 @@ export function Contact() {
                         </div>
 
 
-                        <div class="fade-card" id="card2" style="left: 50%;">
-                            <div class="card-content" >
+                        <div className="fade-card" id="card2" style="left: 50%;">
+                            <div className="card-content" >
                                 <img src="../Images/Group-discussion-contact-two.jpg" alt="Plan">
-                                    <div class="card-text">
+                                    <div className="card-text">
                                         <h4>Plan</h4>
                                         <p>We define clear steps, set timelines, and align every detail to match your vision and expectations.
                                         </p>
@@ -165,10 +176,10 @@ export function Contact() {
                         </div>
 
 
-                        <div class="fade-card" id="card3" style="left: 85%;">
-                            <div class="card-content" >
+                        <div className="fade-card" id="card3" style="left: 85%;">
+                            <div className="card-content" >
                                 <img src="../Images/results-contact.jpg" alt="Launch">
-                                    <div class="card-text">
+                                    <div className="card-text">
                                         <h4>Launch</h4>
                                         <p>We deliver your project with precision, ensuring quality, support, and success.
 
@@ -183,10 +194,10 @@ export function Contact() {
                 </section> -->
 
 
-                <section class="section-6">
+                <section className="section-6">
                     <h2>Why us</h2>
-                    <div class="why-div">
-                        <div class="why-text-wrapper slide-up">
+                    <div className="why-div">
+                        <div className="why-text-wrapper slide-up">
                             <p>
                                 We’re not just a service provider — we’re your growth partner.
                                 Our young and dynamic team thrives on fresh ideas, creativity, and fearless innovation.
@@ -198,7 +209,7 @@ export function Contact() {
                                 Our solutions are tailored, impactful, and always driven by real results.
                                 Partner with us, and let’s build something extraordinary — together.
                             </p>
-                            <div class="link-div">
+                            <div className="link-div">
                                 <a href="#">
                                     Learn more <span>&rarr;</span>
                                 </a>
@@ -207,22 +218,22 @@ export function Contact() {
                     </div>
                 </section>
 
-                <section class="section-7">
-                    <div class="main-content-div">
-                        <div class="back-div">
-                            <div class="top-div">
+                <section className="section-7">
+                    <div className="main-content-div">
+                        <div className="back-div">
+                            <div className="top-div">
                                 <h2>Start Your Journey <br> With Us.</h2>
                             </div>
-                            <div class="bottom-div">
+                            <div className="bottom-div">
                                 <p>Excellence isn’t optional — it’s our standard. <br>
                                     Connect with us to elevate your vision into reality.
                                 </p>
 
-                                <h6 class="typing-effect">Email us at :<a href="mailto:genkit.tech@gmail.com">genkit.tech@gmail.com</a></h6>
+                                <h6 className="typing-effect">Email us at :<a href="mailto:genkit.tech@gmail.com">genkit.tech@gmail.com</a></h6>
 
                                 <h5>Why it Matters ?</h5>
-                                <div class="btm-content-wrap">
-                                    <div class="btm-content-div">
+                                <div className="btm-content-wrap">
+                                    <div className="btm-content-div">
                                         <li>
                                             <img src="../Images/icons/check-circle.png" alt="tick">
                                                 <!-- <lord-icon
@@ -257,7 +268,7 @@ export function Contact() {
                                                 <p>Reliable Partnership</p>
                                         </li>
                                     </div>
-                                    <div class="btm-content-div">
+                                    <div className="btm-content-div">
                                         <li>
                                             <img src="../Images/icons/check-circle.png" alt="tick">
                                                 <!-- <lord-icon
@@ -297,8 +308,8 @@ export function Contact() {
 
                                 <h5>Let's Work Together</h5>
 
-                                <div class="contact-content-wrap">
-                                    <div class="contact-content">
+                                <div className="contact-content-wrap">
+                                    <div className="contact-content">
                                         <h4>1</h4>
                                         <div>
                                             <span>Say Hello !</span>
@@ -309,7 +320,7 @@ export function Contact() {
                                         <img src="../Images/icons/right-arrow (1).png" alt="Right-arrow">
                                     </div>
 
-                                    <div class="contact-content">
+                                    <div className="contact-content">
                                         <h4>2</h4>
                                         <div>
                                             <span>Explore Ideas</span>
@@ -319,7 +330,7 @@ export function Contact() {
                                     <div>
                                         <img src="../Images/icons/right-arrow (1).png" alt="Right-arrow">
                                     </div>
-                                    <div class="contact-content">
+                                    <div className="contact-content">
                                         <h4>3</h4>
                                         <div>
                                             <span>Start Building</span>
@@ -331,12 +342,12 @@ export function Contact() {
                             </div>
                         </div>
                     </div>
-                    <div class="over-flow-div slide-up">
-                        <div class="contact-details-div">
+                    <div className="over-flow-div slide-up">
+                        <div className="contact-details-div">
                             <h5>Start a Coversation</h5>
                             <form action="https://api.web3forms.com/submit" method="POST">
                                 <input type="hidden" name="access_key" value="28cb935b-e79f-4479-9e3a-9f87ba942747">
-                                    <div class="name-div">
+                                    <div className="name-div">
                                         <div>
                                             <span>First name *</span>
                                             <input type="text" name="First name" required>
@@ -346,15 +357,15 @@ export function Contact() {
                                             <input type="text" name="Last name" required>
                                         </div>
                                     </div>
-                                    <div class="contact-same-layout">
+                                    <div className="contact-same-layout">
                                         <span>Email *</span>
                                         <input type="text" name="Email" required>
                                     </div>
-                                    <div class="contact-same-layout">
+                                    <div className="contact-same-layout">
                                         <span>Phone *</span>
                                         <input type="text" name="Phone no" required>
                                     </div>
-                                    <div class="contact-same-layout">
+                                    <div className="contact-same-layout">
                                         <span>How Can We Support You? *</span>
                                         <select name="Service" required>
                                             <option value="" disabled selected>Select a Service</option>
@@ -364,12 +375,12 @@ export function Contact() {
                                             <option value="Other">Other</option>
                                         </select>
                                     </div>
-                                    <div class="text-area-div">
+                                    <div className="text-area-div">
                                         <span>Message *</span>
                                         <textarea id="textarea" placeholder="Let us know how we can Support you...." name="Text Description" required></textarea>
                                     </div>
-                                    <div class="contact-btn-div">
-                                        <button class="submit-btn">Submit</button>
+                                    <div className="contact-btn-div">
+                                        <button className="submit-btn">Submit</button>
                                     </div>
                             </form>
                         </div>

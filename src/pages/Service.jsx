@@ -7,6 +7,7 @@ import videoEditingTag from "../assets/images/service/video-editing-tag.jpg"
 import grahphicDesignTag from "../assets/images/service/graphic-design-tag.jpg"
 import useIsMobile from "../hooks/useIsMobile"
 import useSlideUp from "../hooks/useSlideUp"
+import useScrollClone  from "../hooks/useScrollClone"
 import "./service.css"
 import { Footer } from "../components/Footer"
 
@@ -15,6 +16,7 @@ export function Service() {
 
     const isMobile = useIsMobile();
     useSlideUp();
+    useScrollClone();
 
 
     return (
