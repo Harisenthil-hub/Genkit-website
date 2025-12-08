@@ -5,6 +5,7 @@ import X from "../assets/images/components/x.svg"
 import Youtube from "../assets/images/components/youtube.svg"
 import GitHub from "../assets/images/components/github.svg"
 import Whatsapp from "../assets/images/components/whatsapp.svg"
+import { Link } from "react-router-dom"
 
 
 
@@ -26,10 +27,10 @@ export function Footer() {
                 <div className="footer-quick-links">
                     <h3>Quick Links</h3>
                     <ul>
-                        <li><a href="../index.html">Home</a></li>
-                        <li><a href="./about.html">About Us</a></li>
-                        <li><a href="./service.html">Service</a></li>
-                        <li><a href="./contact.html">Contact</a></li>
+                        <li><Link to="/">Home</Link></li>
+                        <li><Link to="/about-us">About Us</Link></li>
+                        <li><Link to="/service">Service</Link></li>
+                        <li><Link to="/contact">Contact</Link></li>
                     </ul>
                 </div>
                 <div className="social-div">

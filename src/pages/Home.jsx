@@ -7,17 +7,16 @@ import slide_4 from "../assets/images/home/slider-4.jpg"
 import webDevelopment from "../assets/images/home/computer.png"
 import graphicDesign from "../assets/images/home/graphic-design.png"
 import videoEditing from "../assets/images/home/video-editing.png"
-import checkCircle from "../assets/images/home/check-circle.png"
-import rightArrow from "../assets/images/home/right-arrow.png"
 import logoBrowser from "../assets/images/logo-browser.png"
 import { CounterSection } from '../components/CounterSection'
 import { WhyExpandableText } from "../components/WhyExpandableText"
 import { Footer } from "../components/Footer"
-import { ContactForm } from "../components/ContactForm"
 import useSlideUp from "../hooks/useSlideUp"
 import useIsMobile from "../hooks/useIsMobile"
 import useTypingEffect from "../hooks/typingEffect"
 import "./home.css"
+import { ContactSection } from "../components/ContactSection"
+import { Link } from "react-router-dom"
 
 
 
@@ -84,8 +83,8 @@ export function Home() {
                                 With us, your brand gets the attention, performance, and support it deserves.
                             </p>
                             <div className="btn-div">
-                                <a href="./pages/contact.html"><button className="btn-contact">We're Here to Help</button></a>
-                                <a href="./pages/service.html"><button className="btn-service">Expertise</button></a>
+                                <Link to="/contact"><button className="btn-contact">We're Here to Help</button></Link>
+                                <Link to="/service"><button className="btn-service">Expertise</button></Link>
                             </div>
                         </div>
                     </div>
@@ -101,7 +100,6 @@ export function Home() {
                 <section className="section-3">
                     <CounterSection />
                 </section>
-
 
                 <section className="section-4 slide-up">
                     <h6>What <span>make us </span> <br />Different!</h6>
@@ -179,7 +177,6 @@ export function Home() {
                     </div>
                 </section>
 
-
                 <section className="section-5 slide-up">
                     <h6 className="title">Core <span>Services</span></h6>
                     <div className="solutions-grid slide-up">
@@ -189,27 +186,24 @@ export function Home() {
                             </div>
                             <h2>Web Development</h2>
                             <p>We build user-friendly websites that boost your brand and bring your ideas to life with creativity and technology.</p>
-                            <a href="./pages/service.html">Learn More</a>
                         </div>
                         <div className="solution-card">
                             <div className="icon">
                                 <img src={graphicDesign} alt="Graphic Designing" />
                             </div>
                             <h2>Graphic Desgin</h2>
-                            <p>We create bold, memorable designs that bring your brand alive with color and clear storytelling.</p>
-                            <a href="./pages/service.html">Learn More</a>
+                            <p>We create bold, memorable designs that bring your brand alive with vibrant color and clear storytelling.</p>
                         </div>
                         <div className="solution-card">
                             <div className="icon">
                                 <img src={videoEditing} alt="Video Editing" />
                             </div>
                             <h2>Video Editing</h2>
-                            <p>We craft engaging videos that combine visuals and sound to capture attention and tell your story.</p>
-                            <a href="./pages/service.html">Learn More</a>
+                            <p>We craft engaging videos that blend visuals and sound to capture attention and genuinely tell your story.</p>
                         </div>
                     </div>
                     <div className="button-wrapper">
-                        <a href="./pages/service.html"><button className="view-all">View Solutions</button></a>
+                        <Link to="/service"><button className="view-all">View Solutions</button></Link>
                     </div>
                 </section>
 
@@ -221,97 +215,8 @@ export function Home() {
                     </div>
                 </section>
 
-                <section className="section-7">
-                    <div className="main-content-div">
-                        <div className="back-div">
-                            <div className="top-div">
-                                <h2>Start Your Journey <br /> With Us.</h2>
-                            </div>
-                            <div className="bottom-div">
-                                <p>
-                                    Excellence isn’t optional — it’s our standard. {isMobile ? "" : <br />}
-                                    Connect with us to elevate your vision into reality.
-                                </p>
 
-                                <h6 className="typing-effect">Email us at :<a href="mailto:genkit.tech@gmail.com">genkit.tech@gmail.com</a></h6>
-
-                                <h5>Why it Matters ?</h5>
-                                <div className="btm-content-wrap">
-                                    <div className="btm-content-div">
-                                        <li>
-                                            <img src={checkCircle} alt="tick" />
-                                            <p>Tailored Solutions</p>
-                                        </li>
-                                        <li>
-                                            <img src={checkCircle} alt="tick" />
-                                            <p>{isMobile ? 'Client focused' : 'Client-First Approach'}</p>
-                                        </li>
-                                        <li>
-                                            <img src={checkCircle} alt="tick" />
-                                            <p>{isMobile ? 'Steady Partner' : 'Reliable Partnership'}</p>
-                                        </li>
-                                    </div>
-                                    <div className="btm-content-div">
-                                        <li>
-                                            <img src={checkCircle} alt="tick" />
-                                            <p>Transparent Policies</p>
-                                        </li>
-                                        <li>
-                                            <img src={checkCircle} alt="tick" />
-                                            <p>{isMobile ? 'Creative Edge' : 'Creative Excellence'}</p>
-                                        </li>
-                                        <li>
-                                            <img src={checkCircle} alt="tick" />
-                                            <p>Trusted Support</p>
-                                        </li>
-                                    </div>
-                                </div>
-
-                                <h5 className="h5-contact">Let's Work Together</h5>
-
-                                <div className="contact-content-wrap">
-                                    <div className="contact-content">
-                                        <h4>1</h4>
-                                        <div>
-                                            <span>Say Hello !</span>
-                                            <p>We’re quick to reply and happy to help.</p>
-                                        </div>
-                                    </div>
-                                    <div className="contact-img-div">
-                                        <img src={rightArrow} alt="Right-arrow" />
-                                    </div>
-                                    <div className="contact-content">
-                                        <h4>2</h4>
-                                        <div>
-                                            <span>Explore Ideas</span>
-                                            <p>Share your vision, we’ll guide the path.</p>
-                                        </div>
-                                    </div>
-                                    <div className="contact-img-div">
-                                        <img src={rightArrow} alt="Right-arrow" />
-                                    </div>
-                                    <div className="contact-content">
-                                        <h4>3</h4>
-                                        <div>
-                                            <span>Start Building</span>
-                                            <p>Your go-ahead put us in Motion.</p>
-                                        </div>
-                                    </div>
-
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    { isMobile ?
-                        <div className="slide-up">
-                            <ContactForm />
-                        </div> :
-                        <ContactForm />
-                    }
-
-
-                </section>
+                <ContactSection />
             </main>
             <Footer />
 
