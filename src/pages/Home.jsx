@@ -192,14 +192,14 @@ export function Home() {
                                 <img src={graphicDesign} alt="Graphic Designing" />
                             </div>
                             <h2>Graphic Desgin</h2>
-                            <p>We create bold, memorable designs that bring your brand alive with vibrant color and clear storytelling.</p>
+                            <p>We create bold, memorable designs that bring your brand alive with vibrant color and clear storytelling always.</p>
                         </div>
                         <div className="solution-card">
                             <div className="icon">
                                 <img src={videoEditing} alt="Video Editing" />
                             </div>
                             <h2>Video Editing</h2>
-                            <p>We craft engaging videos that blend visuals and sound to capture attention and genuinely tell your story.</p>
+                            <p>We craft engaging videos that blend visuals and sound to capture attention and genuinely tell your story authentically.</p>
                         </div>
                     </div>
                     <div className="button-wrapper">
