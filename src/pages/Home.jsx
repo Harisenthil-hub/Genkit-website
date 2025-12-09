@@ -1,9 +1,9 @@
 import { NavBar } from "../components/NavBar"
 import { useState, useEffect } from "react"
-import slide_1 from "../assets/images/home/slider-1.jpg"
-import slide_2 from "../assets/images/home/slider-2.jpg"
-import slide_3 from "../assets/images/home/slider-3.jpg"
-import slide_4 from "../assets/images/home/slider-4.jpg"
+import slide_1 from "../assets/images/home/team-collaboration-workspace-meeting.jpg"
+import slide_2 from "../assets/images/home/business-team-conference-meeting.jpg"
+import slide_3 from "../assets/images/home/business-team-handshake-meeting.jpg"
+import slide_4 from "../assets/images/home/modern-office-team-working.jpg"
 import webDevelopment from "../assets/images/home/computer.png"
 import graphicDesign from "../assets/images/home/graphic-design.png"
 import videoEditing from "../assets/images/home/video-editing.png"
@@ -26,7 +26,24 @@ export function Home() {
     useSlideUp();
     useTypingEffect();
 
-    const images = [slide_1, slide_2, slide_3, slide_4];
+    const images = [
+        {
+            img : slide_1,
+            alt : "Team collaborating at a workspace with laptops, notes, and marketing charts"
+        },
+        {
+            img : slide_2,
+            alt : "Business team having a meeting in a conference room with laptops and presentation screen"
+        },
+        {
+            img : slide_3,
+            alt : "Business team meeting around a table with two colleagues shaking hands"
+        },
+        {
+            img : slide_4,
+            alt : "Employees working together in a modern office with computers and laptops"
+        }
+        ];
     const [currentSlide, setCurrentSlide] = useState(0);
 
     useEffect(() => {
@@ -90,8 +107,8 @@ export function Home() {
                     </div>
                     <div className="rightside-content">
                         <div className="slides">
-                            {images.map((img, index) => (
-                                <img key={index} className={`slide ${index === currentSlide ? "active" : ""}`} src={img} alt="Image" />
+                            {images.map((obj, index) => (
+                                <img key={index} className={`slide ${index === currentSlide ? "active" : ""}`} src={obj.img} alt={obj.alt} />
                             ))}
                         </div>
                     </div>
