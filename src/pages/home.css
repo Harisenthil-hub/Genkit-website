@@ -45,13 +45,18 @@ button:focus {
     align-items: center;
     height: 7.5rem;
     margin-left: 2rem;
-
-
 }
 
-.logo-div img {
-    height: 49%;
-    width: 150%;
+
+.logo-div-link{
+    width: 12rem;
+    height: 3.7rem;
+}
+
+.logo-div .logo-div-link img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
 }
 
 
@@ -1046,11 +1051,11 @@ button:focus {
     overflow: inherit;
 }
 
-.footer-logo-div {
+.footer-logo-div .footer-logo-link {
     min-width: 33rem;
 }
 
-.footer-logo-div>img {
+.footer-logo-link>img {
     height: 5rem;
     margin-top: 2rem;
     margin-left: 2rem;

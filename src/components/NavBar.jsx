@@ -18,7 +18,7 @@ export function NavBar() {
             <header>
                 <nav className="navbar">
                     <div className="logo-div">
-                        <img src={genkitLogo} alt="Genkit-logo" />
+                        <Link to="/" className='logo-div-link'><img src={genkitLogo} alt="Genkit-logo" /></Link>
                     </div>
                     <div className="menu-toggle" onClick={toggleNav}>
                         {navOpen ? '✕' :'☰' }
