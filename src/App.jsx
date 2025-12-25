@@ -9,7 +9,7 @@ function App() {
 
   return (
     <>
-      <Routes>
+      <Routes basename="/Genkit-website">  {/*Should remove base on deployment */}
         <Route index element={ <Home /> } />
         <Route path='/about-us' element={ <AboutUs /> } />
         <Route path='/service' element={ <Service /> } />
