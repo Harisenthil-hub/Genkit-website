@@ -1,9 +1,9 @@
 import { NavBar } from "../components/NavBar";
 import { useState, useEffect } from "react";
-import slide_1 from "../assets/images/home/team-collaboration-workspace-meeting.jpg";
-import slide_2 from "../assets/images/home/business-team-conference-meeting.jpg";
-import slide_3 from "../assets/images/home/business-team-handshake-meeting.jpg";
-import slide_4 from "../assets/images/home/modern-office-team-working.jpg";
+import slide_1 from "../assets/images/home/team-collaboration-workspace-meeting.webp";
+import slide_2 from "../assets/images/home/business-team-conference-meeting-1.webp";
+import slide_3 from "../assets/images/home/business-team-handshake-meeting.webp";
+import slide_4 from "../assets/images/home/modern-office-team-working.webp";
 import webDevelopment from "../assets/images/home/computer.png";
 import graphicDesign from "../assets/images/home/graphic-design.png";
 import videoEditing from "../assets/images/home/video-editing.png";
@@ -52,7 +52,7 @@ export function Home() {
 
   return (
     <>
-      <link rel="icon" type="image/png" href={logoBrowser} />
+      <link rel="icon" type="image/webp" href={logoBrowser} />
       <NavBar />
       <main>
         <section className="section-1">

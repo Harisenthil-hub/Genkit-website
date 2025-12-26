@@ -2,7 +2,7 @@ import { NavBar } from "../components/NavBar";
 import { Footer } from "../components/Footer"
 import useIsMobile from "../hooks/useIsMobile";
 import aboutContainerImg from "../assets/images/about/about-container-img.jpg"
-import aboutUsImg from "../assets/images/about/about-us.jpg"
+import aboutUsImg from "../assets/images/about/about-us.webp"
 import aboutUsImg2 from "../assets/images/about/group-discussion-contact.jpg"
 import useSlideUp from "../hooks/useSlideUp";
 import logoBrowser from "../assets/images/logo-browser.png"
@@ -19,7 +19,7 @@ export function AboutUs() {
     return (
         <>
             <title>About Us</title>
-            <link rel="icon" type="image/png" href={ logoBrowser } />
+            <link rel="icon" type="image/webp" href={ logoBrowser } />
             <NavBar />
             <main>
                 <section className="section-1">

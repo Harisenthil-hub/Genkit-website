@@ -1,10 +1,10 @@
 import { NavBar } from "../components/NavBar"
 import webDevelopment from "../assets/images/service/web-development-service-tag.jpg"
 import videoEditing from "../assets/images/service/video-editing-service.jpg"
-import graphicDesign from "../assets/images/service/graphic-design-service.jpg"
-import webDevTag from "../assets/images/service/web-dev-tag-1.jpg"
-import videoEditingTag from "../assets/images/service/video-editing-tag.jpg"
-import grahphicDesignTag from "../assets/images/service/graphic-design-tag.jpg"
+import graphicDesign from "../assets/images/service/graphic-design-service.webp"
+import webDevTag from "../assets/images/service/web-dev-tag-1.webp"
+import videoEditingTag from "../assets/images/service/video-editing-tag.webp"
+import grahphicDesignTag from "../assets/images/service/graphic-design-tag.webp"
 import useIsMobile from "../hooks/useIsMobile"
 import useSlideUp from "../hooks/useSlideUp"
 import useScrollClone  from "../hooks/useScrollClone"
@@ -23,7 +23,7 @@ export function Service() {
     return (
         <>
             <title>Service</title>
-            <link rel="icon" type="image/png" href={ logoBrowser } />
+            <link rel="icon" type="image/webp" href={ logoBrowser } />
 
             <NavBar />
             <main>

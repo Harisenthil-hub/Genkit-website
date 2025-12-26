@@ -1,4 +1,4 @@
-import genkitLogo from '../assets/images/genkit-logo-white.png'
+import genkitLogo from '../assets/images/genkit-logo-white.webp'
 import { useState } from 'react'
 import { Link } from 'react-router-dom';
 
