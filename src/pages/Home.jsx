@@ -115,6 +115,7 @@ export function Home() {
                   className={`slide ${index === currentSlide ? "active" : ""}`}
                   src={obj.img}
                   alt={obj.alt}
+                  loading="lazy"
                 />
               ))}
             </div>
@@ -214,7 +215,7 @@ export function Home() {
           <div className="solutions-grid slide-up">
             <div className="solution-card">
               <div className="icon">
-                <img src={webDevelopment} alt="Web Computer" />
+                <img src={webDevelopment} alt="Web Computer" loading="lazy" />
               </div>
               <h2>Web Development</h2>
               <p>
@@ -224,7 +225,7 @@ export function Home() {
             </div>
             <div className="solution-card">
               <div className="icon">
-                <img src={graphicDesign} alt="Graphic Designing" />
+                <img src={graphicDesign} alt="Graphic Designing" loading="lazy" />
               </div>
               <h2>Graphic Desgin</h2>
               <p>
@@ -234,7 +235,7 @@ export function Home() {
             </div>
             <div className="solution-card">
               <div className="icon">
-                <img src={videoEditing} alt="Video Editing" />
+                <img src={videoEditing} alt="Video Editing" loading="lazy" />
               </div>
               <h2>Video Editing</h2>
               <p>
