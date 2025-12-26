@@ -42,10 +42,10 @@ export function WhyExpandableText() {
         isMobile ?
      
           <div className="link-div">
-            <a onClick={() => setExpanded(!expanded)} >
+            <span onClick={() => setExpanded(!expanded)} >
               {expanded ? "Show less" : "Learn more"}{" "}
               <span className={`arrow ${expanded ? "rotate" : ""}`}>&rarr;</span>
-            </a>
+            </span>
           </div>
         : ""
        }

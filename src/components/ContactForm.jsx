@@ -73,27 +73,32 @@ export function ContactForm() {
                         <div className="name-div">
                             <div>
                                 <span>First Name *</span>
-                                <input type="text" name="First Name" required />
+                                <label htmlFor="First-Name" className="visually-hidden">Email</label>
+                                <input type="text" id="First-Name" name="First Name" required />
                             </div>
                             <div>
                                 <span>Last Name *</span>
-                                <input type="text" name="Last Name" required />
+                                <label htmlFor="Last-Name" className="visually-hidden">Last Name</label>
+                                <input type="text" id="Last-Name" name="Last Name" required />
                             </div>
                         </div>
 
                         <div className="contact-same-layout">
                             <span>Email *</span>
-                            <input type="email" name="Email" required />
+                            <label htmlFor="Email" className="visually-hidden">Email</label>
+                            <input type="email" id="Email" name="Email" required />
                         </div>
 
                         <div className="contact-same-layout">
                             <span>Phone *</span>
-                            <input type="text" name="Phone" required />
+                            <label htmlFor="Phone" className="visually-hidden">Phone</label>
+                            <input type="text" id="Phone" name="Phone" required />
                         </div>
 
                         <div className="contact-same-layout">
                             <span>How Can We Support You? *</span>
-                            <select name="Service" required>
+                            <label htmlFor="service" className="visually-hidden">Select a Service</label>
+                            <select id="service" name="Service" required>
                                 <option value="">Select a Service</option>
                                 <option value="Web Development">Web Development</option>
                                 <option value="Graphic Designing">Graphic Designing</option>
@@ -104,8 +109,10 @@ export function ContactForm() {
 
                         <div className="text-area-div">
                             <span>Message *</span>
+                            <label htmlFor="Message-Text-Area" className="visually-hidden">Text Area</label>
                             <textarea
                                 name="Message"
+                                id="Message-Text-Area"
                                 placeholder="Let us know how we can support you..."
                                 required
                             ></textarea>
