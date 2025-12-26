@@ -8,6 +8,7 @@ import logoBrowser from "../assets/images/logo-browser.png"
 import { ContactForm } from "../components/ContactForm";
 import { Footer } from "../components/Footer";
 import { ContactSection } from "../components/ContactSection";
+import useTypingEffect from "../hooks/typingEffect";
 
 
 
@@ -15,6 +16,7 @@ import { ContactSection } from "../components/ContactSection";
 export function Contact() {
 
     useSlideUp();
+    useTypingEffect();
 
     return (
         <>
