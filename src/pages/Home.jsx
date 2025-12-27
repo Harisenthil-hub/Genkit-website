@@ -216,9 +216,9 @@ export function Home() {
         </section>
 
         <section className="section-5 slide-up">
-          <h6 className="title">
+          <h2 className="title">
             Core <span>Services</span>
-          </h6>
+          </h2>
           <div className="solutions-grid slide-up">
             <div className="solution-card">
               <div className="icon">

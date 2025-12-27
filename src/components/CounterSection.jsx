@@ -55,27 +55,27 @@ export function CounterSection() {
     <div className="exp-div" ref={sectionRef}>
       <div>
         <div>
-            <h6 className="count" data-target="7">0</h6>
+            <h1 className="count" data-target="7">0</h1>
             <span>Months</span>
         </div>
         <p>Trusted Results</p>
       </div>
 
       <div>
-        <h6 className="count" data-target="10">0</h6>
+        <h1 className="count" data-target="10">0</h1>
         <p>Creative & Tech Talents</p>
       </div>
 
       <div>
         <div>
-            <h6 className="count" data-target="5">0</h6>
+            <h1 className="count" data-target="5">0</h1>
             <span>Projects</span>
         </div>
         <p>Completed With Precision</p>
       </div>
 
       <div>
-        <h6 className="count" data-target="2000">0</h6>
+        <h1 className="count" data-target="2000">0</h1>
         <p>Hours of Expertise</p>
       </div>
     </div>
