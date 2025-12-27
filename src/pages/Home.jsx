@@ -109,15 +109,22 @@ export function Home() {
           </div>
           <div className="rightside-content">
             <div className="slides">
-              {images.map((obj, index) => (
-                <img
-                  key={index}
-                  className={`slide ${index === currentSlide ? "active" : ""}`}
-                  src={obj.img}
-                  alt={obj.alt}
-                  loading="lazy"
-                />
-              ))}
+              {images.map((obj, index) => {
+                const isFirst = index === 0;
+                return (
+                  <img
+                    key={index}
+                    className={`slide ${
+                      index === currentSlide ? "active" : ""
+                    }`}
+                    src={obj.img}
+                    alt={obj.alt}
+                    loading= { isFirst ? 'eager' : 'lazy' }
+                    fetchPriority= { isFirst ? 'high' : 'auto' }
+                    decoding="async"
+                  />
+                );
+              })}
             </div>
           </div>
         </section>
@@ -225,7 +232,11 @@ export function Home() {
             </div>
             <div className="solution-card">
               <div className="icon">
-                <img src={graphicDesign} alt="Graphic Designing" loading="lazy" />
+                <img
+                  src={graphicDesign}
+                  alt="Graphic Designing"
+                  loading="lazy"
+                />
               </div>
               <h2>Graphic Desgin</h2>
               <p>
