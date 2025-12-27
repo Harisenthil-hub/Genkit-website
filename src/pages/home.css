@@ -306,14 +306,14 @@ button:focus {
     overflow: visible;
 }
 
-.section-4 h6 {
+.section-4 h2 {
     padding-top: 1.5rem;
     margin-left: 1rem;
     font-size: 3.6rem;
     font-weight: bold;
 }
 
-.section-4 h6 span {
+.section-4 h2 span {
     color: #808080;
 }
 
@@ -1435,7 +1435,7 @@ button:focus {
         padding-bottom: 2rem;
     }
 
-    .section-4 h6 {
+    .section-4 h2 {
         font-size: 2.6rem;
         padding-top: 0.6rem;
         margin-left: 0;

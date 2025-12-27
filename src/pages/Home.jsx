@@ -134,10 +134,10 @@ export function Home() {
         </section>
 
         <section className="section-4 slide-up">
-          <h6>
+          <h2>
             What <span>make us </span> <br />
             Different!
-          </h6>
+          </h2>
           <div className="uni-div-main">
             <div className="uni-content-wrapper slide-up">
               <lord-icon
