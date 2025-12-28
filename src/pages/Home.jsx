@@ -119,7 +119,7 @@ export function Home() {
                     }`}
                     src={obj.img}
                     alt={obj.alt}
-                    loading= { isFirst ? 'eager' : 'lazy' }
+                    loading= { isFirst ? 'eager' : '' }
                     fetchPriority= { isFirst ? 'high' : 'auto' }
                     decoding="async"
                   />
