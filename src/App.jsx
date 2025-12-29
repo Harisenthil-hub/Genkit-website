@@ -18,6 +18,7 @@ function App() {
 
     const script = document.createElement("script");
     script.src = "https://cdn.lordicon.com/lordicon.js";
+    script.defer = true;
     document.body.appendChild(script);
   }, []);
 
