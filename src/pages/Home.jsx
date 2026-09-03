@@ -4,10 +4,10 @@ import slide_1 from "../assets/images/home/team-collaboration-workspace-meeting.
 import slide_2 from "../assets/images/home/business-team-conference-meeting-1.webp";
 import slide_3 from "../assets/images/home/business-team-handshake-meeting.webp";
 import slide_4 from "../assets/images/home/modern-office-team-working.webp";
-import webDevelopment from "../assets/images/home/computer.png";
-import graphicDesign from "../assets/images/home/graphic-design.png";
-import videoEditing from "../assets/images/home/video-editing.png";
-import logoBrowser from "../assets/images/logo-browser.png";
+import webDevelopment from "../assets/images/home/computer.webp";
+import graphicDesign from "../assets/images/home/graphic-design.webp";
+import videoEditing from "../assets/images/home/video-editing.webp";
+import logoBrowser from "../assets/images/logo-browser.webp";
 import { CounterSection } from "../components/CounterSection";
 import { WhyExpandableText } from "../components/WhyExpandableText";
 import { Footer } from "../components/Footer";

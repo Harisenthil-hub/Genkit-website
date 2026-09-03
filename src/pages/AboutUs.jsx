@@ -5,7 +5,7 @@ import aboutContainerImg from "../assets/images/about/about-container-img.jpg"
 import aboutUsImg from "../assets/images/about/about-us.webp"
 import aboutUsImg2 from "../assets/images/about/group-discussion-contact.jpg"
 import useSlideUp from "../hooks/useSlideUp";
-import logoBrowser from "../assets/images/logo-browser.png"
+import logoBrowser from "../assets/images/logo-browser.webp"
 import "./about.css"
 
 

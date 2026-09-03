@@ -1,7 +1,7 @@
 import useIsMobile from "../hooks/useIsMobile";
 import useSlideUp from "../hooks/useSlideUp";
-import checkCircle from "../assets/images/home/check-circle.png";
-import rightArrow from "../assets/images/home/right-arrow.png";
+import checkCircle from "../assets/images/home/check-circle.webp";
+import rightArrow from "../assets/images/home/right-arrow.webp";
 import { ContactForm } from "./ContactForm";
 
 export function ContactSection() {
