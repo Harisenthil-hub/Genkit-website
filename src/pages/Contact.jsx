@@ -1,10 +1,10 @@
 import { NavBar } from "../components/NavBar";
-import laptop from "../assets/images/contact/laptop.jpg"
+import laptop from "../assets/images/contact/laptop.webp"
 import useSlideUp from "../hooks/useSlideUp"
 import "./contact.css"
 import FAQList from "../components/FaqList";
-import FaqImg from "../assets/images/contact/FAQ-CONTACT.jpg"
-import logoBrowser from "../assets/images/logo-browser.png"
+import FaqImg from "../assets/images/contact/FAQ-CONTACT.webp"
+import logoBrowser from "../assets/images/logo-browser.webp"
 import { ContactForm } from "../components/ContactForm";
 import { Footer } from "../components/Footer";
 import { ContactSection } from "../components/ContactSection";

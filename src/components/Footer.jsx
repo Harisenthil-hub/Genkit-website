@@ -1,5 +1,5 @@
 import Gmail from "../assets/images/components/gmail.svg";
-import FooterLogo from "../assets/images/components/footer-logo.png";
+import FooterLogo from "../assets/images/components/footer-logo.webp";
 import Instagram from "../assets/images/components/instagram.svg";
 import X from "../assets/images/components/x.svg";
 import Youtube from "../assets/images/components/youtube.svg";
