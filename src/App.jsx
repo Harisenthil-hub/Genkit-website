@@ -4,6 +4,7 @@ import { Home } from "./pages/Home";
 import { AboutUs } from "./pages/AboutUs";
 import { Service } from "./pages/Service";
 import { Contact } from "./pages/Contact";
+import { NotFound } from "./pages/NotFound";
 import { useEffect } from "react";
 
 function App() {
@@ -29,6 +30,7 @@ function App() {
         <Route path="/about-us" element={<AboutUs />} />
         <Route path="/service" element={<Service />} />
         <Route path="/contact" element={<Contact />} />
+        <Route path="*" element={<NotFound />} />
       </Routes>
     </>
   );
