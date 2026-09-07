@@ -1,16 +1,146 @@
-# React + Vite
+# GENKIT
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+> Creative digital solutions for modern businesses.
 
-Currently, two official plugins are available:
+Genkit is a modern digital services website built to showcase and provide professional **Web Development, Video Editing, and Graphic Design** services.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The project is built with React and Vite, with a focus on responsive design, smooth user experience, SEO, performance, and clean project structure.
 
-## React Compiler
+---
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+## ✨ Features
 
-## Expanding the ESLint configuration
+- Responsive design for desktop, tablet, and mobile
+- Modern and clean user interface
+- Web Development service showcase
+- Video Editing service showcase
+- Graphic Design service showcase
+- About Us page
+- Contact page
+- FAQ section
+- Reusable navigation and footer components
+- Smooth scroll and animation effects
+- Mobile-specific responsive behavior
+- SEO-friendly page metadata
+- Canonical URLs
+- Open Graph metadata
+- Twitter Card metadata
+- Custom favicon
+- Open Graph social sharing image
+- `robots.txt`
+- `sitemap.xml`
+- React Router based navigation
+- Production-ready Vite build
+- Vercel deployment configuration
+- Optimized static assets
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+---
+
+## 🚀 Services
+
+### Web Development
+
+Professional websites and digital experiences designed around business requirements, usability, responsiveness, and performance.
+
+### Video Editing
+
+Creative video editing solutions for promotional content, social media, branding, and digital marketing.
+
+### Graphic Design
+
+Visual design solutions including branding, digital graphics, creative assets, and marketing materials.
+
+---
+
+## 📄 Website Pages
+
+| Page | Route | Purpose |
+|------|-------|---------|
+| Home | `/` | Introduction to Genkit and its services |
+| About Us | `/about-us` | Genkit story, team, and vision |
+| Services | `/service` | Web development, video editing, and graphic design |
+| Contact | `/contact` | Contact information and project enquiries |
+| 404 | `*` | Handles unavailable routes |
+
+---
+
+## 🛠️ Tech Stack
+
+### Frontend
+
+- React
+- React DOM
+- React Router
+- React Helmet Async
+- JavaScript (ES Modules)
+- HTML5
+- CSS3
+
+### Build Tools
+
+- Vite
+- ESLint
+- Vite React Plugin
+
+### Deployment
+
+- Vercel
+
+### Assets
+
+- WebP
+- JPG
+- SVG
+- Custom favicon
+- Open Graph image
+
+---
+
+## 📁 Project Structure
+
+```text
+Genkit-website/
+│
+├── public/
+│   ├── favicon.webp
+│   ├── og-image.webp
+│   ├── robots.txt
+│   └── sitemap.xml
+│
+├── src/
+│   │
+│   ├── assets/
+│   │   └── images/
+│   │
+│   ├── components/
+│   │   ├── NavBar.jsx
+│   │   └── Footer.jsx
+│   │
+│   ├── hooks/
+│   │   ├── useIsMobile.js
+│   │   ├── useSlideUp.js
+│   │   └── useScrollClone.js
+│   │
+│   ├── pages/
+│   │   ├── Home.jsx
+│   │   ├── Home.css
+│   │   ├── AboutUs.jsx
+│   │   ├── about.css
+│   │   ├── Service.jsx
+│   │   ├── service.css
+│   │   ├── Contact.jsx
+│   │   ├── contact.css
+│   │   └── NotFound.jsx
+│   │
+│   ├── App.jsx
+│   ├── main.jsx
+│   └── index.css
+│
+├── .gitignore
+├── eslint.config.js
+├── index.html
+├── package.json
+├── package-lock.json
+├── vercel.json
+├── vite.config.js
+└── README.md
