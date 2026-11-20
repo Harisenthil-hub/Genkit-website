@@ -7,6 +7,7 @@ import { Contact } from "./pages/Contact";
 import { NotFound } from "./pages/NotFound";
 import { useEffect } from "react";
 
+
 function App() {
   useEffect(() => {
     if (
