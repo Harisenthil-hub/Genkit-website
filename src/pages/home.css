@@ -73,9 +73,9 @@ button:focus {
     font-size: 1.5rem;
     text-decoration: none;
     color: #000;
-    font-family: 'Poppins';
+    font-family: 'Poppins', sans-serif;
     cursor: pointer;
-    font-weight: bold;
+    font-weight: 600;
     position: relative;
     transition: color 0.3s ease;
 }
@@ -151,7 +151,7 @@ button:focus {
 
 .tagline h1 {
     font-size: 4rem;
-    font-weight: bolder;
+    font-weight: 600;
 }
 
 .tagline-main p {
@@ -289,7 +289,7 @@ button:focus {
 
 .exp-div span {
     font-size: 2.5rem;
-    font-weight: bold;
+    font-weight: 600;
     vertical-align: middle;
 }
 
